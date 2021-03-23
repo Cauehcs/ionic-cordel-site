@@ -22,13 +22,17 @@ li div {
     display: block;
     color: black;
     text-align: center;
+    min-width: 215px;
+    min-height: 176.76px;
     width: 15.7vw;
     height: 13vw;
+    margin: 0 5vw 0 0;
 }
 
 p {
     color: black;
     font-size: 12px;
+    margin: 0;
     // font-family: ;
 }
 
