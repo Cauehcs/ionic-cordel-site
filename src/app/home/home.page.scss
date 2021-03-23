@@ -51,6 +51,24 @@ p {
     width: 100vw;
 }
 
+.appearances {
+    height: 29.3vw;
+    position: relative;
+    width: 100vw;
+}
+
+.appearanceCard {
+    margin: 1.7% 0 0 7%;
+    width: 85.6%;
+    height: 15.5%;
+}
+
+.titulo { position: relative; margin: 2.5% 0 0 7%; }
+
+div.titulo p { padding-bottom: 8px; font-size: 28px; color: #6509B3; }
+
+div.titulo div { position: absolute; bottom: 0px; height: 5px; width: 83px ; background-color: #FF9E01; }
+
 #container {
     text-align: center;
     position: absolute;
