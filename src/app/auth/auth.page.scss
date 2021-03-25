@@ -29,21 +29,35 @@
 #content-text-forms {
     position: absolute;
     z-index: -1;
-    height: 50%;
+    height: clamp(15em, calc(1em + 20vw), 20em);
     width: 100%;
     top: 0%;
+    padding-top: 5.5%;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+div#content-text-forms h1 {
+    margin: 0 25%;
+    font-size: clamp(1.5em, calc(1em + 2vw), 3em);
+    color: #F0F0F7;
+}
+
+div#content-text-forms p {
+    margin: 1% 25% 0%;
+    font-size: clamp(.5em, calc(1em + 1.2vw), 1.2em);
+    color: #F0F0F7;
 }
 
 #content-fields-forms {
     position: absolute;
     z-index: 2;
-    top: 45%;
-    height: 120%;
+    top: 40%;
+    height: 60%;
     width: auto;
     display: flex;
-    left: 25%;
-    right: 25%;
+    left: clamp(10%, 25%, 25%);
+    right: clamp(10%, 25%, 25%);
+    min-width: 500px;
 }
 
 #background-forms {
