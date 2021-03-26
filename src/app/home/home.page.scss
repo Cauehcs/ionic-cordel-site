@@ -53,7 +53,8 @@ p {
 .finalCont {
     width: 100vw;
     position: relative;
-    height: 40vw;
+    height: auto;
+    display: block;
 }
 
 .finalCont img {
@@ -73,6 +74,30 @@ p {
     border: 1px solid #FF9E01;
     height: 110%;
     width: 19.7vw;
+}
+
+.TalkToUs{
+    height: 37vw;
+    width: 100vw;
+}
+
+.TalkToUs div {
+    background-image: url("../../assets/TalkToUsPanel.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 661.67px;
+    min-height: 364px;
+    height: 27.6vw;
+    width: 48.5vw;
+    margin: auto;
+    margin-top: 10%;
+    position: relative;
+}
+
+.footer {
+    background-color: #FF9E01;
+    width: 100vw;
+    height: 200px;
 }
 
 .banners {
@@ -120,8 +145,12 @@ p {
     margin: 2.5% 0 0 7%;
 }
 
+.logo {
+    height: 59px; margin-top: 10px; margin-left: 7vw; float: left;
+}
+
 div.titulo p {
-    padding-bottom: 8px;
+    padding-bottom: 13px;
     font-size: 28px;
     color: #6509B3;
 }
