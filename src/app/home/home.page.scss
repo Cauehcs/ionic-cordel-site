@@ -7,7 +7,6 @@ ul {
     margin: 0;
     padding: 0;
     margin-top: 19px;
-    overflow: hidden;
 }
 
 li a {
@@ -51,10 +50,35 @@ p {
     width: 100vw;
 }
 
+.finalCont {
+    width: 100vw;
+    position: relative;
+    height: 40vw;
+}
+
+.finalCont img {
+    width: 60px;
+    position: absolute;
+    top: -32px;
+    overflow: visible;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.finalCont li div {
+    position: relative;
+    border: 1px solid #FF9E01;
+    height: 110%;
+    width: 19.7vw;
+}
+
 .banners {
     background-repeat: no-repeat;
     background-size: calc(100vw + 2px);
-    height: 45.7vw;
+    height: 42.5vw;
     position: relative;
     margin: 0;
     border: 0;
