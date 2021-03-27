@@ -12,6 +12,7 @@
 }
 
 #header-forms {
+    padding: 0 5vw;
     height: 10%;
     width: 100%;
     position: fixed;
@@ -19,45 +20,53 @@
     left: 0;
     border-bottom: 2px solid rgba(217, 115, 0, .1);
     box-sizing: border-box;
+    
 }
 
 .header-forms-element {
+    height: 30%;
     width: auto;
-    height: 40%;
+}
+
+#content {
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    height: 90%;
 }
 
 #content-text-forms {
-    position: absolute;
     z-index: -1;
-    height: clamp(15em, calc(1em + 20vw), 20em);
+    height: clamp(8em, calc(1em + 1vw), 10em);
     width: 100%;
-    top: 0%;
-    padding-top: 5.5%;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 div#content-text-forms h1 {
-    margin: 0 25%;
-    font-size: clamp(1.5em, calc(1em + 2vw), 3em);
+    margin: 0 10vw;
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: clamp(1em, calc(1em + 2vw), 2em);
     color: #F0F0F7;
 }
 
 div#content-text-forms p {
-    margin: 1% 25% 0%;
-    font-size: clamp(.5em, calc(1em + 1.2vw), 1.2em);
+    margin: 1% 10vw 0;
+    font-family: 'Poppins';
+    opacity: .8;
+    font-size: clamp(.5em, calc(.6em + 1vw), 1em);
     color: #F0F0F7;
 }
 
 #content-fields-forms {
-    position: absolute;
     z-index: 2;
-    top: 40%;
-    height: 60%;
-    width: auto;
-    display: flex;
-    left: clamp(10%, 25%, 25%);
-    right: clamp(10%, 25%, 25%);
-    min-width: 500px;
+    height: calc(100% - clamp(12em, calc(1em + 1vw), 20em));
+    width: 100%;
 }
 
 #background-forms {
@@ -65,9 +74,52 @@ div#content-text-forms p {
     position: relative;
     border: 1px solid #E6E6F0;
     box-sizing: border-box;
-    border-radius: 1%;
-    top: 0;
-    width: 100%;
-    height: 90%;
+    border-radius: 8px;
+    margin: 0 10vw;
+    height: 40vh;
     z-index: 2;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+    #background-forms {
+        margin: 0 15vw;
+        height: 40vh;
+    }
+
+    div#content-text-forms p {
+        margin: 1% 15vw 0;
+    }
+
+    div#content-text-forms h1 {
+        margin: 0 15vw;
+    }
+
+    #content-text-forms {
+        height: clamp(12em, calc(1em + 15vh), 20em);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    /* For desktop: */
+    .header-forms-element {
+        height: 70%;
+    }
+
+    #content-text-forms {
+        height: clamp(12em, calc(1em + 15vh), 20em);
+    }
+        
+    div#content-text-forms p {
+        margin: 1% 25vw 0;
+    }
+
+    div#content-text-forms h1 {
+        margin: 0 25vw;
+    }
+
+    #background-forms {
+        margin: 0 25vw;
+        height: 60vh;
+    }
 }
