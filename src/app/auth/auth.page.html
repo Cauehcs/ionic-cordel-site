@@ -1,6 +1,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
-<ion-content [fullscreen]="true" style="--background: #F0F0F7; position: relative;">
+<ion-content [fullscreen]="true" style="--background: #F0F0F7; position: relative;" onselectstart="return false">
   <div id="header-forms" class="ion-no-border" style="background-color: #f39600;display: flex; justify-content: center; align-items: center;">
     <img onclick="history.back()" src="../../assets/auth/back-arrow.svg" class="header-forms-element" style="cursor: pointer;">
     <p class="header-forms-element half-opacity" style="  display: flex; align-items: center; font-family: 'Archivo'; font-weight: 600;">Autenticação</p>
@@ -14,6 +14,23 @@
     <div id="content-fields-forms">
       <div class="color-cordel" style="width: 100%; height: 8%; z-index: -1; position: absolute;"></div>
       <div id="background-forms">
+        <div id="login-content">
+          <h1>Entrar</h1>
+          <hr>
+          <div>
+            <ion-item id="email-field" color="transparent" lines="none">
+              <ion-label position="stacked" class="label-form">E-mail</ion-label>
+              <ion-input type="email" class="input-form"></ion-input>
+            </ion-item>
+            <ion-item id="password-field" color="transparent" lines="none">
+              <ion-label position="stacked" class="label-form">Senha</ion-label>
+              <ion-input type="password" class="input-form"></ion-input>
+            </ion-item>
+          </div>
+          <br>
+          <p>Em vez disso, criar conta.</p>
+          <ion-button>Acessar conta</ion-button>
+        </div>
       </div>
     </div>
   </div>

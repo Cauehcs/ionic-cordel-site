@@ -80,6 +80,61 @@ div#content-text-forms p {
     z-index: 2;
 }
 
+#login-content {
+    margin: auto 4vw;
+}
+
+.item-has-focus {
+    color: #FF9E01;
+}
+
+.has-focus {
+    border: 1px solid #FF9E01;
+    transition: border .3s;
+}
+
+ion-input:not(.has-focus){
+    color: #9C98A6;
+    border: 1px solid #E6E6F0;
+}
+
+ion-input {
+    --highlight-color-focused: none;
+}
+
+div#login-content h1 {
+    color: #24170e;
+    font-family: 'Archivo';
+    font-weight: 600;
+    margin: 5vh 0 0;
+    padding-left: 16px;
+    font-size: clamp(1em, calc(1em + 1vw), 1.8em);
+}
+
+div#login-content hr {
+    border: 0;
+    border-top: 1px solid #000;
+    opacity: .2;
+    margin: 2vh 0vh;
+}
+
+.label-form {
+    color: #9C98A6
+}
+
+.input-form {
+    margin-top: 2vh;
+    background: #FAFAFC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    --padding-start: 3%;
+    --padding-end: 3%;
+}
+#login-content p {
+    padding: 2vh 3%;  
+    color: #9C98A6;
+}
+
 @media only screen and (min-width: 768px) {
     /* For tablets: */
     #background-forms {
