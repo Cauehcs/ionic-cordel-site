@@ -73,15 +73,28 @@ div#content-text-forms p {
     background-color: white;
     position: relative;
     border: 1px solid #E6E6F0;
+    border-bottom-color: transparent;
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
     margin: 0 10vw;
-    height: 40vh;
+    height: 10vh;
     z-index: 2;
 }
 
 #login-content {
     margin: auto 4vw;
+}
+
+#login-confirm {
+    background-color: #FAFAFC, 100%;
+    position: relative;
+    border: 1px solid #E6E6F0;
+    box-sizing: border-box;
+    margin: 0 10vw;
+    height: 10vh;
+    z-index: 2;
+    border-radius: 0 0 8px 8px;
+    bottom: 0;
 }
 
 .item-has-focus {
@@ -175,6 +188,12 @@ div#login-content hr {
 
     #background-forms {
         margin: 0 25vw;
-        height: 60vh;
+        height: 40vh;
+        padding-bottom: 46vh;
+    }
+
+    #login-confirm {
+        margin: 0 25vw;
+        height: 10vh;
     }
 }
