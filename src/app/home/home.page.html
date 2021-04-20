@@ -25,21 +25,21 @@
         </div>
         <ul style="margin-top: 40px; display: flex; justify-content: center;">
             <li>
-                <div>
+                <div class="bloco">
                     <img src="../../assets/AtuacaoIcon.png" style="margin: auto; width: 28%">
                     <p style="font-size: 20px; margin: 7px 0;">Atuação</p>
-                    <p>Trabalhamos com práticas e<br>ferramentas (digitais ou analógicas)<br>baseadas em jogos e gamificação;<br>Além de workshops e cursos para a<br>capacitação de educadores.</p>
+                    <p>Trabalhamos com práticas e ferramentas (digitais ou analógicas) baseadas em jogos e gamificação; Além de workshops e cursos para a capacitação de educadores.</p>
                 </div>
             </li>
             <li>
-                <div>
+                <div class="bloco">
                     <img src="../../assets/OrigemIcon.png" style="margin: auto; width: 27%">
                     <p style="font-size: 20px; margin: 7px 0;">Origem</p>
                     <p>Fundada em Novembro de 2019, por um grupo de alunos no ensino médio, motivados pelo desejo de melhorar a educação, unindo-a com a tecnologia e os jogos.</p>
                 </div>
             </li>
             <li>
-                <div style="margin: 0">
+                <div class="bloco" style="margin: 0">
                     <img src="../../assets/MissaoIcon.png" style="margin: auto; width: 28%">
                     <p style="font-size: 20px; margin: 7px 0;">Missão</p>
                     <p>Transformar os cenários de aprendizagem por meio da união da educação com a tecnologia.</p>
@@ -54,13 +54,29 @@
             <p><Strong>Aparições</Strong></p>
             <div></div>
         </div>
-        <div class="appearanceCard">
-            <img src="../../assets/foto bom dia pe.png" style="width: 32%; float: left">
-            <div style="float: left; margin: 0 0 0 8%">
-                <p style="font-size: 24px; margin-bottom: 13px">Estudante cria empresa e desenvolve alternativas<br>de ensino por meio de jogos</p>
-                <p style="font-size: 20px; color: #878787">Em Bom Dia PE</p>
+        <div *ngFor="let n of appearences; let i = index">
+            <div [hidden]="!(i === currentAppearence)" class="appearanceCard" style="height: 15.5vw">
+                <img [src]="appearenceImg[i]" style="width: 32%; float: left">
+                <div style="float: left; margin: 0 0 0 8%">
+                    <p style="font-size: 24px; margin-bottom: 13px; position: relative; width: 46vw"><ion-text>{{appearences[i]}}</ion-text></p>
+                    <p style="font-size: 20px; color: #878787"><ion-text>{{appearenceFrom[i]}}</ion-text></p>
+                </div>
             </div>
         </div>
+        <ul style="height: 20px; display: flex; justify-content: center;">
+            <li style="width: 20px; height: 20px; margin-right: 20px">
+                <div class="appearanceButons checked" id="appearenceBtn0" (click)="changeApparition(0)"></div>
+            </li>
+            <li style="width: 20px; height: 20px; margin-right: 20px">
+                <div class="appearanceButons" id="appearenceBtn1" (click)="changeApparition(1)"></div>
+            </li>
+            <li style="width: 20px; height: 20px; margin-right: 20px">
+                <div class="appearanceButons" id="appearenceBtn2" (click)="changeApparition(2)"></div>
+            </li>
+            <li style="width: 20px; height: 20px;">
+                <div class="appearanceButons" id="appearenceBtn3" (click)="changeApparition(3)"></div>
+            </li>
+        </ul>
     </div>
     <div class="banners" style="background-image: url('../../assets/banner\ professor\ do\ futuro\ presente.png');">
         <div>
@@ -83,7 +99,7 @@
         </div>
         <ul style="margin-top: 48px; display: flex; justify-content: center; margin-bottom: 5%;">
             <li>
-                <div>
+                <div class="bloco">
                     <img src="../../assets/Ellipse.png">
                     <p style="font-size: 20px; margin: 40px 0 0 0;"><strong>Marcos Primo</strong></p>
                     <p>professor UFPE</p>
@@ -91,7 +107,7 @@
                 </div>
             </li>
             <li>
-                <div>
+                <div class="bloco">
                     <img src="../../assets/Ellipse.png">
                     <p style="font-size: 20px; margin: 40px 0 0 0;"><strong>Micheline Souza</strong></p>
                     <p>gestora de escola pública em Recife</p>                 
@@ -99,7 +115,7 @@
                 </div>
             </li>
             <li>
-                <div style="margin: 0;">
+                <div class="bloco" style="margin: 0;">
                     <img src="../../assets/Ellipse.png">
                     <p style="font-size: 20px; margin: 40px 0 0 0;"><strong>Tatiane Magali</strong></p>
                     <p>professora de inglês em Recife</p>
