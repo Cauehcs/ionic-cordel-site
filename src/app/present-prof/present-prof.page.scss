@@ -1,0 +1,21 @@
+.banners div.bgbanner {
+    background-repeat: no-repeat;
+    background-size: 44vw;
+    height: 22.6vw;
+    min-width: 600px;
+    min-height: 309px;
+    // margin-left: 40px;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.firstCont {
+    background-color: #FF9E02;
+    width: 100vw;
+    min-height: 57.5vw;
+    height: auto;
+    overflow: auto;
+}

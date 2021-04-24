@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'auth',
     loadChildren: () => import('./auth/auth.module').then( m => m.AuthPageModule)
   },
+  {
+    path: 'present-prof',
+    loadChildren: () => import('./present-prof/present-prof.module').then( m => m.PresentProfPageModule)
+  },
 
 ];
 

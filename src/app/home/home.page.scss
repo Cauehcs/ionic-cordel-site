@@ -1,22 +1,3 @@
-li {
-    float: left;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 19px;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 12px 16px 12px 16px;
-    text-decoration: none;
-}
-
 li div.bloco {
     display: block;
     color: black;
@@ -28,15 +9,8 @@ li div.bloco {
     margin: 0 5vw 0 0;
 }
 
-p {
-    color: black;
-    font-size: 12px;
-    margin: 0;
-    // font-family: ;
-}
-
 .firstCont {
-    background-image: url("../../assets/firstBackground.png");
+    background-image: url("../../assets/Backgrounds/firstBackground.png");
     background-repeat: no-repeat;
     background-size: 100vw;
     height: 45.7vw;
@@ -76,13 +50,13 @@ p {
     width: 19.7vw;
 }
 
-.TalkToUs{
+.TalkToUs {
     height: 37vw;
     width: 100vw;
 }
 
 .TalkToUs div {
-    background-image: url("../../assets/TalkToUsPanel.png");
+    background-image: url("../../assets/Panels/TalkToUsPanel.png");
     background-repeat: no-repeat;
     background-size: contain;
     min-width: 661.67px;
@@ -92,12 +66,6 @@ p {
     margin: auto;
     margin-top: 10%;
     position: relative;
-}
-
-.footer {
-    background-color: #FF9E01;
-    width: 100vw;
-    height: 200px;
 }
 
 .banners {
@@ -141,34 +109,14 @@ p {
 }
 
 .appearanceButons {
-    width: 100%; height: 100%; background-color: #686868; border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #686868;
+    border-radius: 50%;
 }
 
 .checked {
     background-color: #572c41 !important;
-}
-
-.titulo {
-    position: relative;
-    margin: 2.5% 0 0 7%;
-}
-
-.logo {
-    height: 59px; margin-top: 10px; margin-left: 7vw; float: left;
-}
-
-div.titulo p {
-    padding-bottom: 13px;
-    font-size: 28px;
-    color: #6509B3;
-}
-
-div.titulo div {
-    position: absolute;
-    bottom: 0px;
-    height: 5px;
-    width: 83px;
-    background-color: #FF9E01;
 }
 
 #container {
