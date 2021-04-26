@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PresentProfPage implements OnInit {
 
+  selectedSlide : any;
+  SliderOptions = {
+    initialSlide: 0,
+    sliderPerView: 1,
+    speed: 800,
+    loop: true,
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: false,
+      },
+  };
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  slidesDidLoad(slides) {
+    slides.startAutoplay();
   }
 
 }

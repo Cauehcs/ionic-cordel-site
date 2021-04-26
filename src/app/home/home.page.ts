@@ -19,10 +19,10 @@ export class HomePage implements OnInit{
                               "Em Pionners Post",
                               "Em NE 10",
                               "Em Folha PE"];
-  appearenceImg: string[] = ["../../assets/fotobomdiape.png",
-                              "../../assets/fotopionnerspost.jpg",
-                              "../../assets/fotone10.jpg",
-                              "../../assets/Fotofolhape.jpg"];
+  appearenceImg: string[] = ["../../assets/Aparicoes/fotobomdiape.png",
+                              "../../assets/Aparicoes/fotopionnerspost.jpg",
+                              "../../assets/Aparicoes/fotone10.jpg",
+                              "../../assets/Aparicoes/Fotofolhape.jpg"];
 
   ngOnInit() {
     this.currentAppearence = 0;

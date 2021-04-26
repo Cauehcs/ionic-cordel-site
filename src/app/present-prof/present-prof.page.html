@@ -12,15 +12,15 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" style="--background: white;">
-    <div class="banners" style="background-image: url('../../assets/banner\ professor\ do\ futuro\ presente.png');">
-        <div class="bgbanner" style="background-image: url('../../assets/MaskGroup.png')">
+    <div class="banners" style="background-image: url('../../assets/Backgrounds/banner\ professor\ do\ futuro\ presente.png');">
+        <div class="bgbanner" style="background-image: url('../../assets/Panels/MaskGroup.png')">
             <div class="titulo" style="margin: 11% 0 0 12%;">
-                <p style="font-size: 26px;">
+                <p>
                     <Strong>O que você encontrará no pacote:</Strong>
                 </p>
                 <div></div>
             </div>
-            <p style="color: #6509B3; margin: 16px 0 0 17%; font-size: 18px; font-weight: 600; line-height: 130%;">Uma <strong>oferta exclusiva</strong> contendo três cursos
+            <p style="color: #6509B3; margin: 1vw 0 0 17%; font-size: 18px; font-weight: 600; line-height: 130%;">Uma <strong>oferta exclusiva</strong> contendo três cursos
                 <br>que abordam temas inevitáveis no novo
                 <br>normal do desempenho educacional, no
                 <br>qual você professor, poderá se inspirar e
@@ -37,30 +37,63 @@
             <p style="font-size: 28px; color: white; font-weight: 600;">O nosso objetivo é proporcionar um ganho profissional com recursos tecnológicos, interação e integração dos alunos, além de ajudar a mantê-los engajados nos cenários de ensino híbrido, remoto e presencial.</p>
         </div>
         <div style="width: 50%; float: left; height: auto;">
-            <img src="./../assets/firstCourseDetails.png" style="position: absolute; right: 0; width: 45%; z-index: 0;">
+            <img src="./../assets/firstCourseDetails.png" style="position: absolute; right: 0; width: 45%; z-index: 0; overflow: hidden;">
             <ul style="z-index: 5; position: relative; padding: 9.5vw 100px;">
                 <li style="clear: left; display: block; width: 35vw;">
                     <img src="./../assets/icon/ico1.png" style="width: 5vw; float: left; margin-right: 30px;">
-                    <p style="font-size: 20px; font-weight: 700; color: white; margin-top: 2%;">Certificado de conclusão digital;</p>
+                    <p style="font-weight: 700; color: white; margin-top: 2%;">Certificado de conclusão digital;</p>
                 </li>
                 <li style="clear: left; margin-top: 35px; display: block; width: 35vw;">
                     <img src="./../assets/icon/ico2.png" style="width: 5vw; float: left; margin-right: 30px;">
-                    <p style="font-size: 20px; font-weight: 700; color: white; margin-top: 10%;">Pagamentos seguros;</p>
+                    <p style="font-weight: 700; color: white; margin-top: 10%;">Pagamentos seguros;</p>
                 </li>
                 <li style="clear: left; margin-top: 35px; display: block; width: 35vw;">
                     <img src="./../assets/icon/ico3.png" style="width: 5vw; float: left; margin-right: 30px;">
-                    <p style="font-size: 20px; font-weight: 700; color: white; margin-top: 5%;">Suporte da Cordel For Education;</p>
+                    <p style="font-weight: 700; color: white; margin-top: 5%;">Suporte da Cordel For Education;</p>
                 </li>
                 <li style="clear: left; margin-top: 35px; display: block; width: 35vw;">
                     <img src="./../assets/icon/ico4.png" style="width: 5vw; float: left; margin-right: 30px;">
-                    <p style="font-size: 20px; font-weight: 700; color: white; margin-top: 5%;">Acesso de todos os dispositivos;</p>
+                    <p style="font-weight: 700; color: white; margin-top: 5%;">Acesso de todos os dispositivos;</p>
                 </li>
                 <li style="clear: left; margin-top: 35px; display: block; width: 35vw;">
                     <img src="./../assets/icon/ico5.png" style="width: 5vw; float: left; margin-right: 30px;">
-                    <p style="font-size: 20px; font-weight: 700; color: white; margin-top: 5%;">Cases reais aplicáveis;</p>
+                    <p style="font-weight: 700; color: white; margin-top: 5%;">Cases reais aplicáveis;</p>
                 </li>
             </ul>
         </div>
+    </div>
+    <div class="firstSlides" style="position: relative; z-index: 2;">
+        <div class="titulo">
+            <p>
+                <Strong>Benefícios</Strong>
+            </p>
+            <div></div>
+        </div>
+        <ion-slides style="height: 20vw; z-index: 5;" #slides pager="true" [options]="SliderOptions" (ionSlidesDidLoad)="slidesDidLoad(slides)">
+            <ion-slide>
+                <img src="./../assets/icon/SlidesIcon1.png" style="width: 5vw; float: left; margin-right: 30px;">
+                <p style="font-weight: 700; color: black; margin-top: 1%;">Modifica a forma de trabalho, otimizando as atividades<br>burocráticas para mais tempo de planejamento<br>pedagógico e acompanhamento dos estudantes.</p>
+            </ion-slide>
+            <ion-slide>
+                <img src="./../assets/icon/SlidesIcon2.png" style="width: 5vw; float: left; margin-right: 30px;">
+                <p style="font-weight: 700; color: black;">Inclui ferramentas acessíveis, práticas e inclusivas.</p>
+            </ion-slide>
+            <ion-slide>
+                <img src="./../assets/icon/SlidesIcon3.png" style="width: 5vw; float: left; margin-right: 30px;">
+                <p style="font-weight: 700; color: black; margin-top: 2.5%;">Permite o acesso a todos os materiais de forma inédita, além de<br>sorteios, trajetória lúdica e acesso antecipado aos lançamentos da<br>Cordel.</p>
+            </ion-slide>
+            <ion-slide>
+                <img src="./../assets/icon/SlidesIcon4.png" style="width: 5vw; float: left; margin-right: 30px;">
+                <p style="font-weight: 700; color: black;">Torna a aprendizagem divertida, estimulando os estudantes.</p>
+            </ion-slide>
+        </ion-slides>
+    </div>
+    <div class="secondSlides">
+        <ion-slides style="height: auto; position: relative; margin: 0; border: 0; padding: 0;" #slides pager="true" [options]="SliderOptions" (ionSlidesDidLoad)="slidesDidLoad(slides)">
+            <ion-slide class="banners" style="background-image: url('../../assets/Backgrounds/seLigaBG.png'); height: 40.6vw;"></ion-slide>
+            <ion-slide class="banners" style="background-image: url('../../assets/Backgrounds/professorMidiáticoBG.png'); height: 40.6vw;"></ion-slide>
+            <ion-slide class="banners" style="background-image: url('../../assets/Backgrounds/levelUpBG.png'); height: 40.6vw;"></ion-slide>
+        </ion-slides>
     </div>
     <div class="footer">
         <img src="../../assets/logo.png" class="logo" style="margin-top: 70.5px">
