@@ -9,6 +9,16 @@ export class HomePage implements OnInit{
 
   constructor() {}
 
+  SliderOptions = {
+    initialSlide: 0,
+    sliderPerView: 1,
+    speed: 800,
+    loop: true,
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: false,
+      },
+  };
   currentAppearence: number = 0;
   interval: number;
   appearences: string[] = ["Estudante cria empresa e desenvolve alternativas\nde ensino por meio de jogos",
@@ -32,6 +42,10 @@ export class HomePage implements OnInit{
       this.currentAppearence += (this.currentAppearence == 3) ? -3 : 1;
       document.getElementById('appearenceBtn' + this.currentAppearence.toString()).classList.add('checked');
     }, 10000);
+  }
+
+  slidesDidLoad(slides) {
+    slides.startAutoplay();
   }
 
   changeApparition(index: number){

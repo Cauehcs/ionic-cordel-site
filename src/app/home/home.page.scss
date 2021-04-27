@@ -103,9 +103,22 @@ li div.bloco {
 }
 
 .appearanceCard {
-    margin: 1.7% 0 0 7%;
+    margin: 1.7% 0 0 0;
     width: 85.6%;
     height: 32%;
+    height: 15.5vw;
+    width: 85.65vw;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.appearanceCard a {
+    position: absolute;
+    right: 18vw;
+    bottom: 0;
+    width: 170px;
+    height: 42px;
+    padding: 10px 16px 10px 16px;
 }
 
 .appearanceButons {

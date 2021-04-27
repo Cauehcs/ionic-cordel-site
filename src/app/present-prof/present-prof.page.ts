@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PresentProfPage implements OnInit {
 
-  selectedSlide : any;
   SliderOptions = {
     initialSlide: 0,
     sliderPerView: 1,
@@ -27,5 +26,4 @@ export class PresentProfPage implements OnInit {
   slidesDidLoad(slides) {
     slides.startAutoplay();
   }
-
 }
