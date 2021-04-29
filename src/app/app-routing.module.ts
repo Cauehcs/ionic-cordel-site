@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'present-prof',
     loadChildren: () => import('./present-prof/present-prof.module').then( m => m.PresentProfPageModule)
   },
+  {
+    path: 'hackids',
+    loadChildren: () => import('./hackids/hackids.module').then( m => m.HackidsPageModule)
+  },
 
 ];
 

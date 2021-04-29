@@ -68,34 +68,6 @@ li div.bloco {
     position: relative;
 }
 
-.banners {
-    background-repeat: no-repeat;
-    background-size: calc(100vw + 2px);
-    height: 42.5vw;
-    position: relative;
-    margin: 0;
-    border: 0;
-    padding: 0;
-}
-
-.banners div {
-    text-align: center;
-    margin: 0;
-    width: 25%;
-    position: absolute;
-    left: 14.5%;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.banners div ion-button {
-    --border-radius: 50px;
-    width: 170px;
-    height: 42px;
-    margin-top: 5%
-}
-
 .appearances {
     height: 29.3vw;
     position: relative;

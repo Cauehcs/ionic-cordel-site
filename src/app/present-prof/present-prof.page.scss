@@ -3,8 +3,8 @@
     background-size: 100%;
     height: 23.6vw;
     width: 43.6vw;
-    min-width: 555px;
-    min-height: 300px;
+    min-width: 600px;
+    min-height: 324px;
     // margin-left: 40px;
     position: absolute;
     left: 40px;
@@ -16,9 +16,8 @@
 .firstCont {
     background-color: #FF9E02;
     width: 100vw;
-    min-height: 57.5vw;
-    height: auto;
-    overflow: auto;
+    // min-height: 50vw;
+    overflow: hidden;
     position: relative;
     z-index: 1;
 }
