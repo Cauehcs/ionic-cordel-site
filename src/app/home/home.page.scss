@@ -2,25 +2,28 @@ li div.bloco {
     display: block;
     color: black;
     text-align: center;
-    min-width: 215px;
-    min-height: 176.76px;
-    width: 15.7vw;
-    height: 13vw;
+    min-width: 245px;
+    min-height: 245px;
+    width: 17vw;
+    height: 17vw;
     margin: 0 5vw 0 0;
+    background-repeat: no-repeat;
+    padding: 6vw 24px 0 24px;
 }
 
 .firstCont {
     background-image: url("../../assets/Backgrounds/firstBackground.png");
     background-repeat: no-repeat;
     background-size: 100vw;
-    height: 45.7vw;
+    height: 51.5vw;
     position: relative;
+    padding: 140px 14.5% 0 14.5%;
 }
 
 .secondCont {
-    height: 28.4vw;
+    min-height: 304px;
     position: relative;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     width: 100vw;
 }
 
@@ -69,19 +72,56 @@ li div.bloco {
 }
 
 .appearances {
-    height: 29.3vw;
+    height: 40vw;
+    min-height: 450px;
     position: relative;
     width: 100vw;
+    ion-slides {
+        min-width: calc(900px + 8%);
+        min-height: 400;
+    }
 }
 
 .appearanceCard {
-    margin: 1.7% 0 0 0;
-    width: 85.6%;
-    height: 32%;
-    height: 15.5vw;
-    width: 85.65vw;
+    height: 30vw;
     align-items: flex-start;
-    margin-top: 40px;
+    flex-direction: column;
+    width: 22vw;
+    min-width: 300px;
+    button{
+        background-color: transparent;
+        border-radius: 40px;
+        border: 3px solid #6509B3;
+        color:#6509B3;
+        width: 45%;
+        height: 10%;
+        font-size: 16px;
+        font-weight: 700;
+        margin: auto;
+        margin-top: 10px;
+    }
+    ion-card {
+        width: 22vw;
+        min-height: 300px;
+        min-width: 300px;
+        background-color: #FFFFFF;
+        text-align: left;
+        ion-card-header {
+            clear: left;
+            display: block;
+            ion-card-subtitle {
+                font-size: 14px;
+                font-weight: 600;
+                color: #A8A8A8;
+            }
+        }
+        ion-card-content {
+            padding-right: 30px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #333332;
+        }
+    }
 }
 
 .appearanceCard a {

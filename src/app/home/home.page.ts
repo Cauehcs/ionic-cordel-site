@@ -10,8 +10,9 @@ export class HomePage implements OnInit{
   constructor() {}
 
   SliderOptions = {
-    initialSlide: 0,
-    sliderPerView: 1,
+    initialSlide: 1,
+    slidesPerView: 3,
+    spaceBetween: '3%',
     speed: 800,
     loop: true,
     autoplay: {
@@ -25,10 +26,10 @@ export class HomePage implements OnInit{
                            "Play for the planet: The favela youth redesigning gaming from Brazil’s north-east",
                            "Primeira startup incubada no Porto Digital de Recife com alunos do Ensino Médio",
                            "Startup embarcada no Porto Digital ganha reconhecimento internacional"];
-  appearenceFrom: string[] = ["Em Bom Dia PE",
-                              "Em Pionners Post",
-                              "Em NE 10",
-                              "Em Folha PE"];
+  appearenceFrom: string[] = ["Bom Dia PE",
+                              "Pionners Post",
+                              "NE 10",
+                              "Folha PE"];
   appearenceImg: string[] = ["../../assets/Aparicoes/fotobomdiape.png",
                               "../../assets/Aparicoes/fotopionnerspost.jpg",
                               "../../assets/Aparicoes/fotone10.jpg",

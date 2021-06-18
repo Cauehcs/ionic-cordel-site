@@ -67,12 +67,14 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 12px 16px 12px 16px;
+    padding: 12px 1.2vw;
     text-decoration: none;
 }
 
 .roundedLink {
-    background-color: #6509B3;
+    height: 40px;
+    padding: 12px 20px;
+    background-color: #FF9E01;
     border-radius: 50px;
     display: block;
     color: white;
@@ -90,7 +92,6 @@ p {
 .logo {
     height: 59px;
     margin-top: 10px;
-    margin-left: 7vw;
     float: left;
 }
 
@@ -125,7 +126,10 @@ p {
 .titulo {
     display: block;
     position: relative;
-    margin: 2.5% 0 0 7%;
+    //margin: 2.5% 0 0 7%;
+    text-align: center;
+    width: 20%;
+    margin: auto;
 }
 
 div.titulo p {
@@ -135,10 +139,9 @@ div.titulo p {
 }
 
 div.titulo div {
-    position: absolute;
-    bottom: 0px;
-    height: 5px;
+    height: 3px;
     width: 83px;
+    margin: auto;
     background-color: #FF9E01;
 }
 
@@ -152,4 +155,9 @@ div.titulo div {
 ion-slides {
     --bullet-background: #686868;
     --bullet-background-active: #572c41 !important;
+}
+
+ion-toolbar {
+    padding: 0 14.5%;
+    width: calc(100vw - 16px);
 }
