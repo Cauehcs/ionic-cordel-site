@@ -105,17 +105,16 @@ p {
     padding: 0;
 }
 
-.banners div {
-    text-align: center;
-    margin: 0;
-    width: 25%;
-    position: absolute;
-    left: 14.5%;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
+// .banners div {
+//     text-align: center;
+//     margin: 0;
+//     width: 25%;
+//     position: absolute;
+//     left: 14.5%;
+//     top: 50%;
+//     -ms-transform: translateY(-50%);
+//     transform: translateY(-50%);
+// }
 .banners div ion-button {
     --border-radius: 50px;
     width: 170px;
@@ -134,7 +133,7 @@ p {
 
 div.titulo p {
     padding-bottom: 13px;
-    font-size: 28px;
+    font-size: 24px;
     color: #6509B3;
 }
 

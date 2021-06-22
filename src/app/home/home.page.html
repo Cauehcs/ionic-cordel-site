@@ -10,7 +10,9 @@
             <li><a href="#">Produtos</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Fale conosco</a></li>
-            <li><div style="width: 1px; height: 40px; background-color: #FFFFFF; margin: 0 1.5vw;"></div></li>
+            <li>
+                <div style="width: 1px; height: 40px; background-color: #FFFFFF; margin: 0 1.5vw;"></div>
+            </li>
             <li><a href="auth" class="roundedLink" style="margin-left: 16px;">Área do aluno</a></li>
         </ul>
     </ion-toolbar>
@@ -22,15 +24,16 @@
     </div>
     <div class="secondCont">
         <div class="titulo">
-            <p><Strong>Sobre a Cordel</Strong></p>
+            <p>
+                <Strong>Sobre a Cordel</Strong>
+            </p>
             <div></div>
         </div>
         <ul style="margin-top: 40px; display: flex; justify-content: center; min-height: 304px;">
             <li>
                 <div class="bloco" style="background-image: url('../../assets/Panels/Atuacao.png');">
                     <p style="margin: 0 0 15px 0; font-weight: 700;">Atuação</p>
-                    <p style="font-size: 12px;">Trabalhamos com práticas e ferramentas - digitais ou analógicas - baseadas em jogos e gamificação; 
-                        Além de workshops e cursos para a capacitação de educadores.</p>
+                    <p style="font-size: 12px;">Trabalhamos com práticas e ferramentas - digitais ou analógicas - baseadas em jogos e gamificação; Além de workshops e cursos para a capacitação de educadores.</p>
                 </div>
             </li>
             <li>
@@ -49,7 +52,9 @@
     </div>
     <div class="appearances">
         <div class="titulo">
-            <p><Strong>Aparições</Strong></p>
+            <p>
+                <Strong>Aparições</Strong>
+            </p>
             <div></div>
         </div>
         <ion-slides style="height: 30vw; margin-top: 40px; width: 80%;" #slides pager="false" [options]="SliderOptions" (ionSlidesDidLoad)="slidesDidLoad(slides)">
@@ -65,27 +70,70 @@
             </ion-slide>
         </ion-slides>
     </div>
-    <div style="width: 100%; height: 296px; background: linear-gradient(69deg, rgba(255,158,1,1) 0%, rgba(101,9,179,1) 95%);">
-        <p style="font-size: 56px; font-weight: 700; line-height: 56px; color: #FFFFFF; padding: 64px 14.5%;">
-            Aprenda a planejar<br>
-            e criar aulas mais<br>
-            dinâmicas e engajadoras!</p>
+    <div style="width: 100%; height: 296px; background: linear-gradient(69deg, rgba(255,158,1,1) 0%, rgba(101,9,179,1) 95%); filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+        <p style="font-size: 56px; font-weight: 700; line-height: 56px; color: #FFFFFF; padding: 64px 0 64px 14.5%;">
+            Aprenda a planejar<br>e criar aulas mais<br>dinâmicas e engajadoras!</p>
     </div>
-    <div class="banners" style="background-image: url('../../assets/Backgrounds/banner\ professor\ do\ futuro\ presente.png');">
-        <div>
-            <img src="../../assets/tituloBanner1.png" style="margin-bottom: 5%">
-            <p style="color: white; font-size: 18px;">Aprenda como tornar suas aulas diferenciadas e inclusivas com os cursos do pacote <strong>Professor do ̶F̶u̶t̶u̶r̶o̶ Presente.</strong></p>
-            <ion-button color="tertiary" href="present-prof">Saiba mais</ion-button>
+    <div style="margin: 112px 0 40px 0;">
+        <div class="titulo">
+            <p>
+                <Strong>Nossos cursos</Strong>
+            </p>
+            <div></div>
         </div>
     </div>
-    <div class="banners" style="background-image: url('../../assets/Backgrounds/banner\ hackids.png');">
+    <ion-slides class="BannersSlider" pager="true" [options]="DefaultSliderOptions">
+        <ion-slide class="banners" style="background-image: url('../../assets/Backgrounds/SeLiga.png');">
+            <div class="bannerCard">
+                <div class="bannerTexts">
+                    <div class="titulo">
+                        <p>
+                            <Strong>O que você encontrará no curso:</Strong>
+                        </p>
+                        <div></div>
+                    </div>
+                    <p style="font-size: clamp(10px, calc(3px + 1vw), 16px); margin-top: 7%; line-height: 1.7vw;">Em “Professor Atualizado”, as barreiras da mentalidade e uma cultura antiga serão desconstruídas para que uma aprendizagem efetiva e ferramentas possibilitem um aprendizado apoiado no ‘learning by doing’.</p>
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+        </ion-slide>
+        <ion-slide class="banners" style="background-image: url('../../assets/Backgrounds/Informado.png');">
+            <div class="bannerCard">
+                <div class="bannerTexts">
+                    <div class="titulo">
+                        <p>
+                            <Strong>O que você encontrará no curso:</Strong>
+                        </p>
+                        <div></div>
+                    </div>
+                    <p style="font-size: clamp(10px, calc(3px + 1vw), 16px); margin-top: 7%; line-height: 1.7vw;">O curso “Professor Midiático” abordará ferramentas que estão no dia a dia dos estudantes e que os professores podem incrementar em seu planejamento, para tornar o processo de ensino-aprendizagem mais divertido.</p>
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+        </ion-slide>
+        <ion-slide class="banners" style="background-image: url('../../assets/Backgrounds/LevelUp.png');">
+            <div class="bannerCard">
+                <div class="bannerTexts">
+                    <div class="titulo">
+                        <p>
+                            <Strong>O que você encontrará no curso:</Strong>
+                        </p>
+                        <div></div>
+                    </div>
+                    <p style="font-size: clamp(10px, calc(3px + 1vw), 16px); margin-top: 7%; line-height: 1.7vw;">Em “Level Up! Professor Gamificado” o educador poderá se capacitar e aprender mais sobre gamificação como metodologia ativa para sala de aula.</p>
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+        </ion-slide>
+    </ion-slides>
+    <!-- <div class="banners" style="background-image: url('../../assets/Backgrounds/banner\ hackids.png');">
         <div>
             <p style="color: white; font-size: 36px; margin-bottom: 5%"><strong>HacKids</strong></p>
             <p style="color: white; margin-bottom: 3%; font-size: 18px;">Aprenda a desenvolver o raciocínio lógico das crianças por meio de práticas de programação com o <strong>HacKids.</strong></p>
             <ion-button color="tertiary" href="hackids">Saiba mais</ion-button>
         </div>
-    </div>
-    <div class="finalCont">
+    </div> -->
+    <!-- <div class="finalCont">
         <div class="titulo">
             <p>
                 <Strong>Depoimentos</Strong>
@@ -123,8 +171,8 @@
                 </div>
             </li>
         </ul>
-    </div>
-    <div class="TalkToUs">
+    </div> -->
+    <!-- <div class="TalkToUs">
         <div>
             <p style="color:#FF9E01; text-align: center; font-size: 28px; padding-top: 34px;">
                 <Strong>Fale conosco</Strong>
@@ -134,7 +182,7 @@
             <ion-input placeholder="Assunto" style="background-color: blueviolet; border-radius: 10px; width: 60%; margin: auto; margin-top: 37px"></ion-input>
             <img src="../../assets/TalkToUsFundo.png" style="position: absolute; left: 2.15%; bottom: 4.7%; width: 54%">
         </div>
-    </div>
+    </div> -->
     <div class="footer">
         <img src="../../assets/logo.png" class="logo" style="margin-top: 70.5px">
         <ul style="float: right; margin-right: 52px; margin-top: 77.5px">

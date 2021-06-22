@@ -20,6 +20,16 @@ export class HomePage implements OnInit{
       disableOnInteraction: false,
       },
   };
+  DefaultSliderOptions = {
+    initialSlide: 0,
+    slidesPerView: 1,
+    speed: 800,
+    loop: true,
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: false,
+      },
+  };
   currentAppearence: number = 0;
   interval: number;
   appearences: string[] = ["Estudante cria empresa e desenvolve alternativas\nde ensino por meio de jogos",
