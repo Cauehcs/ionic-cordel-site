@@ -50,6 +50,7 @@
 
 * {
     font-family: 'Mulish', sans-serif;
+    color: #333332;
 }
 
 li {
@@ -83,7 +84,6 @@ li a {
 }
 
 p {
-    color: black;
     font-size: 20px;
     margin: 0;
     // font-family: ;
@@ -132,9 +132,11 @@ p {
 }
 
 div.titulo p {
-    padding-bottom: 13px;
+    padding-bottom: 8px;
     font-size: 24px;
-    color: #6509B3;
+    strong {
+        color: #6509B3;
+    }
 }
 
 div.titulo div {
@@ -145,15 +147,50 @@ div.titulo div {
 }
 
 .footer {
+    display: flex;
+    justify-content: space-between;
     clear: left;
-    background-color: #FF9E01;
-    width: 100vw;
-    height: 200px;
+    background: linear-gradient(82.74deg, #FF9E01 14.18%, #6509B3 107.05%);
+    width: 100%;
+    height: 289px;
+    padding: 32px 14.5vw;
+    div {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+        height: 224px;
+        h1 {
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            margin: 0;
+        }
+        p {
+            margin-top: 16px;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24px;
+        }
+        span {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            h3 {
+                margin: 0;
+                color: white;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 24px;
+            }
+        }
+    }
 }
 
 ion-slides {
-    --bullet-background: #686868;
-    --bullet-background-active: #572c41 !important;
+    --bullet-background: #FFFFFF !important;
+    --bullet-background-active: #FF9E01 !important;
 }
 
 ion-toolbar {
