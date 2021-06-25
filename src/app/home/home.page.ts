@@ -20,7 +20,7 @@ export class HomePage implements OnInit{
       disableOnInteraction: false,
       },
   };
-  DefaultSliderOptions = {
+  BannerSliderOptions = {
     initialSlide: 0,
     slidesPerView: 1,
     speed: 800,
@@ -44,15 +44,27 @@ export class HomePage implements OnInit{
                               "../../assets/Aparicoes/fotopionnerspost.jpg",
                               "../../assets/Aparicoes/fotone10.jpg",
                               "../../assets/Aparicoes/Fotofolhape.jpg"];
+  currentHeaderClass = 'headerTop';
 
   ngOnInit() {
     this.currentAppearence = 0;
     console.log(this.currentAppearence);
-    this.interval = self.setInterval(() => {
-      document.getElementById('appearenceBtn' + this.currentAppearence.toString()).classList.remove('checked');
-      this.currentAppearence += (this.currentAppearence == 3) ? -3 : 1;
-      document.getElementById('appearenceBtn' + this.currentAppearence.toString()).classList.add('checked');
-    }, 10000);
+    // this.interval = self.setInterval(() => {
+    //   console.log(document.getElementById('appContent').getScrollElement());
+    // }, 1000);
+  }
+
+  async changeHeader(event){
+    if (this.currentHeaderClass === 'headerSolid'){
+      return;
+    }
+    this.currentHeaderClass = 'headerSolid';
+  }
+  async normalizeHeader(event){
+    const scrollElement = await event.target.getScrollElement();
+    if (scrollElement.scrollTop === 0){
+      this.currentHeaderClass = 'headerTop';
+    }
   }
 
   slidesDidLoad(slides) {

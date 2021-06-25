@@ -1,0 +1,71 @@
+.BannersSlider {
+    ion-slide {
+        align-items: center;
+        justify-content: start;
+    }
+    ion-slide .bannerCard {
+        background-image: url('../../assets/Panels/BannerPanel.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 13%;
+        width: 44.5%;
+        height: 62.5%;
+        .bannerTexts {
+            position: relative;
+            text-align: left;
+            width: 72%;
+            height: 72%;
+            margin: 10% 14%;
+            .titulo {
+                text-align: left;
+                width: 100%;
+                div {
+                    margin: 0;
+                }
+                p {
+                    font-size: clamp(16px, calc(9px + 1vw), 24px);
+                }
+            }
+            button {
+                position: absolute;
+                bottom: 1vw;
+                right: 0;
+                background-color: #6509B3;
+                border-radius: 40px;
+                border: 3px solid #6509B3;
+                color: #FFFFFF;
+                width: 40%;
+                height: 15%;
+                font-size: 16px;
+                font-weight: 700;
+                margin: auto;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.secondCont {
+    width: 100%;
+    padding: 40px 14.5vw 64px 14.5vw;
+    background: linear-gradient(292.43deg, #FF9E01 -15.25%, #6509B3 98.91%);
+    h1 {
+        color: white;
+        font-size: 4.1vw;
+        font-weight: 700;
+        line-height: 5.2vw;
+        margin: 0 0 60px 0;
+    }
+    p {
+        color: white;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 40px;
+        strong {
+            color: white;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 40px;
+        }
+    }
+}

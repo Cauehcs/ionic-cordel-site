@@ -72,10 +72,15 @@ li a {
     text-decoration: none;
 }
 
+ion-content {
+    --background: #F7F7F7;
+}
+
 .roundedLink {
     height: 40px;
-    padding: 12px 20px;
-    background-color: #FF9E01;
+    padding: 7px 20px;
+    background-color: transparent;
+    border: 3px solid #FFFFFF;
     border-radius: 50px;
     display: block;
     color: white;
@@ -105,16 +110,6 @@ p {
     padding: 0;
 }
 
-// .banners div {
-//     text-align: center;
-//     margin: 0;
-//     width: 25%;
-//     position: absolute;
-//     left: 14.5%;
-//     top: 50%;
-//     -ms-transform: translateY(-50%);
-//     transform: translateY(-50%);
-// }
 .banners div ion-button {
     --border-radius: 50px;
     width: 170px;
@@ -188,12 +183,130 @@ div.titulo div {
     }
 }
 
+.commonCont {
+    background-color: white;
+    width: 100%;
+    padding: 36px 14.5vw 36px 14.5vw;
+    margin: 110px 0 40px 0;
+    h1 {
+        font-size: 4.1vw;
+        font-weight: 700;
+        line-height: 4.1vw;
+        color: #FF9E01;
+        margin: 0 0 16px 0;
+    }
+    h2 {
+        font-size: 4.1vw;
+        font-weight: 700;
+        line-height: 4.1vw;
+        margin: 0 0 16px 0;
+        span {
+            color: #6509B3;
+        }
+    }
+    p {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+}
+
 ion-slides {
     --bullet-background: #FFFFFF !important;
     --bullet-background-active: #FF9E01 !important;
 }
 
-ion-toolbar {
-    padding: 0 14.5%;
-    width: calc(100vw - 16px);
+ion-header {
+    transition: background-color 0.5s ease 0s !important;
+    ion-toolbar {
+        --background: transparent;
+        height: 80px;
+        padding: 0 14.5%;
+        width: calc(100vw - 16px);
+    }
+}
+
+.headerTop {
+    background-color: transparent;
+}
+
+.headerSolid {
+    background-color: #FF9E01;
+}
+
+.ofertaCont {
+    margin-top: 40px;
+    div:first-child {
+        background-color: #FF3333;
+        text-align: center;
+        padding: 16px 0;
+        p {
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+    }
+    .ofertaElements {
+        width: 60%;
+        margin: auto;
+        margin-top: 25px;
+        ul {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-flow: wrap;
+            li {
+                width: 33%;
+                text-align: center;
+                p {
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 24px;
+                }
+                img {
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .ofertaDetails {
+        text-align: center;
+        width: 71%;
+        margin: auto;
+        margin-top: 100px;
+        span {
+            color: #A8A8A8;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        h1 {
+            margin: 15px 0 40px 0;
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 50px;
+            text-align: center;
+            strong {
+                font-size: 80px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 70px;
+                text-align: center;
+            }
+        }
+        p {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        button {
+            margin-top: 40px;
+            width: 430px;
+            height: 72px;
+            color: white;
+            font-size: 34px;
+            font-weight: 700;
+            background-color: #FF9E01;
+            border-radius: 50px;
+        }
+    }
 }

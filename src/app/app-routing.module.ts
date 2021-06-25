@@ -22,6 +22,10 @@ const routes: Routes = [
     path: 'hackids',
     loadChildren: () => import('./hackids/hackids.module').then( m => m.HackidsPageModule)
   },
+  {
+    path: 'venda',
+    loadChildren: () => import('./venda/venda.module').then( m => m.VendaPageModule)
+  },
 
 ];
 

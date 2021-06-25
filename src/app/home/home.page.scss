@@ -34,7 +34,7 @@ li div.bloco {
     width: 100vw;
     ion-slides {
         min-width: calc(900px + 8%);
-        min-height: 400;
+        min-height: 400px;
     }
 }
 
@@ -44,6 +44,7 @@ li div.bloco {
     flex-direction: column;
     width: 22vw;
     min-width: 300px;
+    min-height: 345px;
     button {
         background-color: transparent;
         border-radius: 40px;
@@ -51,12 +52,14 @@ li div.bloco {
         color: #6509B3;
         width: 45%;
         height: 10%;
+        min-height: 35px;
         font-size: 16px;
         font-weight: 700;
         margin: auto;
         margin-top: 10px;
     }
     ion-card {
+        border-radius: 10px;
         width: 22vw;
         min-height: 300px;
         min-width: 300px;
@@ -137,78 +140,6 @@ li div.bloco {
                 margin: auto;
                 margin-top: 10px;
             }
-        }
-    }
-}
-
-.ofertaCont {
-    margin-top: 40px;
-    div:first-child {
-        background-color: #FF3333;
-        text-align: center;
-        padding: 16px 0;
-        p {
-            color: white;
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 24px;
-        }
-    }
-    .ofertaElements {
-        width: 60%;
-        margin: auto;
-        margin-top: 25px;
-        ul {
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            flex-flow: wrap;
-            li {
-                width: 33%;
-                text-align: center;
-                img {
-                    margin: auto;
-                }
-            }
-        }
-    }
-    .ofertaDetails {
-        text-align: center;
-        width: 71%;
-        margin: auto;
-        margin-top: 100px;
-        span {
-            color: #A8A8A8;
-            font-size: 24px;
-            font-weight: 700;
-        }
-        h1 {
-            margin: 15px 0 40px 0;
-            font-size: 48px;
-            font-weight: 800;
-            line-height: 50px;
-            text-align: center;
-            strong {
-                font-size: 80px;
-                font-style: normal;
-                font-weight: 800;
-                line-height: 70px;
-                text-align: center;
-            }
-        }
-        p {
-            font-size: 24px;
-            font-weight: 700;
-        }
-        button {
-            margin-top: 40px;
-            width: 430px;
-            height: 72px;
-            color: white;
-            font-size: 34px;
-            font-weight: 700;
-            background-color: #FF9E01;
-            border-radius: 50px;
         }
     }
 }
