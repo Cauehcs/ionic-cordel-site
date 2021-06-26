@@ -44,3 +44,103 @@
         }
     }
 }
+
+.cursoCont {
+    margin-bottom: 8px;
+    > :first-child {
+        padding: 20px 14.5%;
+        background-color: #1B1B1B;
+        p {
+            font-size: 20px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+    }
+    .cursoCards {
+        width: calc(44vw + 32px);
+        float: left;
+        ion-card {
+            box-shadow: 0px 4px 5px rgba(155, 155, 155, 0.14), 0px 1px 10px rgba(155, 155, 155, 0.12), 0px 2px 4px rgba(155, 155, 155, 0.2);
+            margin: 0 16px 32px 0;
+            width: 22vw;
+            background-color: white;
+            padding-top: 20px;
+            border-radius: 10px;
+            height: 14.5vw;
+            float: left;
+            div {
+                float: left;
+                height: 16px;
+                width: 5px;
+                background-color: #FF9E01;
+            }
+            p {
+                margin-left: 11px;
+                float: left;
+                color: #6509B3;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 16px;
+            }
+            span {
+                display: block;
+                padding: 0 16px;
+                margin-top: 10%;
+                clear: left;
+                font-size: 1.7vw;
+                font-weight: 700;
+                line-height: 1.7vw;
+            }
+        }
+    }
+    .buyCourse {
+        width: 22vw;
+        float: right;
+        ion-card {
+            margin: 0;
+            box-shadow: 0px 4px 5px rgba(155, 155, 155, 0.14), 0px 1px 10px rgba(155, 155, 155, 0.12), 0px 2px 4px rgba(155, 155, 155, 0.2);
+            border-radius: 10px;
+            background-color: white;
+            ion-card-content {
+                padding: 1.2vw 2.5vw;
+                div {
+                    margin-top: 15px;
+                    height: 8%;
+                    img {
+                        width: 8%;
+                        float: left;
+                        margin-right: 6%;
+                    }
+                    p {
+                        color: #A8A8A8;
+                        font-size: 1.2vw;
+                        font-weight: 700;
+                        line-height: 1.2vw;
+                    }
+                }
+                h2 {
+                    margin-top: 8px;
+                    text-align: center;
+                    color: #FF9E01;
+                    font-size: calc(8px + 1.5vw);
+                    font-weight: 700;
+                }
+                button {
+                    margin-left: 2.2vw;
+                    margin-top: 1.5vw;
+                    margin-bottom: 3.5vw;
+                    color: white;
+                    background-color: #FF9E01;
+                    border-radius: 40px;
+                    width: 12.5vw;
+                    height: 3vw;
+                }
+            }
+            h1 {
+                font-size: 1.4vw;
+                font-weight: 700;
+                line-height: 1.4vw;
+            }
+        }
+    }
+}

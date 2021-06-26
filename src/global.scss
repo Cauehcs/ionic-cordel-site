@@ -224,12 +224,12 @@ div.titulo div {
     }
     p {
         color: white;
-        font-size: 28px;
+        font-size: calc(8px + 1.5vw);
         font-weight: 400;
         line-height: 40px;
         strong {
             color: white;
-            font-size: 28px;
+            font-size: calc(8px + 1.5vw);
             font-weight: 700;
             line-height: 40px;
         }
@@ -274,7 +274,7 @@ ion-header {
         }
     }
     .ofertaElements {
-        width: 60%;
+        width: 70%;
         margin: auto;
         margin-top: 25px;
         ul {
@@ -285,10 +285,13 @@ ion-header {
             li {
                 width: 33%;
                 text-align: center;
-                p {
-                    font-size: 18px;
-                    font-weight: 700;
-                    line-height: 24px;
+                div {
+                    height: 50px;
+                    p {
+                        font-size: 17px;
+                        font-weight: 700;
+                        line-height: 24px;
+                    }
                 }
                 img {
                     margin: auto;
