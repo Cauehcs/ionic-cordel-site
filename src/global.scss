@@ -31,7 +31,7 @@
 
 /*Fonts*/
 
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap');
 :root,
 :root[mode="md"],
@@ -242,12 +242,13 @@ ion-slides {
 }
 
 ion-header {
+    width: calc(100vw - 16px);
     transition: background-color 0.5s ease 0s, box-shadow 0.5s ease 0s !important;
     ion-toolbar {
         --background: transparent;
         height: 80px;
         padding: 0 14.5%;
-        width: calc(100vw - 16px);
+        width: 100%;
     }
 }
 
