@@ -108,37 +108,34 @@ p {
     margin: 0;
     border: 0;
     padding: 0;
+    div ion-button {
+        --border-radius: 50px;
+        width: 170px;
+        height: 42px;
+        margin-top: 5%
+    }
 }
 
-.banners div ion-button {
-    --border-radius: 50px;
-    width: 170px;
-    height: 42px;
-    margin-top: 5%
-}
-
-.titulo {
+div.titulo {
     display: block;
     position: relative;
     //margin: 2.5% 0 0 7%;
     text-align: center;
     width: 20%;
     margin: auto;
-}
-
-div.titulo p {
-    padding-bottom: 8px;
-    font-size: 24px;
-    strong {
-        color: #6509B3;
+    p {
+        padding-bottom: 8px;
+        font-size: 24px;
+        strong {
+            color: #6509B3;
+        }
     }
-}
-
-div.titulo div {
-    height: 3px;
-    width: 83px;
-    margin: auto;
-    background-color: #FF9E01;
+    div {
+        height: 3px;
+        width: 83px;
+        margin: auto;
+        background-color: #FF9E01;
+    }
 }
 
 .footer {
@@ -263,7 +260,7 @@ ion-header {
 
 .ofertaCont {
     margin-top: 40px;
-    div:first-child {
+    > div:first-child {
         background-color: #FF3333;
         text-align: center;
         padding: 16px 0;
@@ -272,6 +269,38 @@ ion-header {
             font-size: 20px;
             font-weight: 700;
             line-height: 24px;
+        }
+    }
+    .offerTitle {
+        width: 71%;
+        margin: auto;
+        margin-top: 30px;
+        > div:first-child {
+            margin-top: 30px;
+            width: 50%;
+            float: left;
+            background-color: transparent;
+            text-align: left;
+            p {
+                font-size: 3.7vw;
+                font-weight: 700;
+                line-height: 3.7vw;
+                color: #323333;
+            }
+            div {
+                width: 96%;
+                height: 40px;
+                text-align: center;
+                background-color: #FF9E01;
+                padding: 8px 0;
+                margin-top: 4.5%;
+                p {
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    color: #6509B3;
+                }
+            }
         }
     }
     .ofertaElements {
@@ -338,5 +367,10 @@ ion-header {
             background-color: #FF9E01;
             border-radius: 50px;
         }
+    }
+}
+@media (max-width: 800px) {
+    .offerTitle div p {
+        text-align: center !important;
     }
 }

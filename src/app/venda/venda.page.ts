@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VendaPage implements OnInit {
 
+  lastDay = new Date(2021,8,4);
+  daysLeft: number;
+  daysLeftText;
   BannerSliderOptions = {
     initialSlide: 0,
     slidesPerView: 1,
@@ -22,6 +25,14 @@ export class VendaPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    let today = new Date();
+    var dd = parseInt(String(today.getDate()).padStart(2, '0'));
+    var mm = parseInt(String(today.getMonth() + 1).padStart(2, '0'));
+    today = new Date(today.getFullYear(), mm, dd);
+    var diff =(today.getTime() - this.lastDay.getTime()) / (1000 * 60 * 60 * 24);
+    this.daysLeft = Math.abs(Math.round(diff));
+    console.log(this.daysLeft);
+    this.daysLeftText = (this.daysLeft === 0) ? 'Acaba hoje!' : (this.daysLeft === 1) ? 'Resta apenas 1 dia' : `Restam: ${this.daysLeft} dias`;
   }
 
   async changeHeader(event){
