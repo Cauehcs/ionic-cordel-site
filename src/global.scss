@@ -260,7 +260,7 @@ ion-header {
 
 .ofertaCont {
     margin-top: 40px;
-    > div:first-child {
+    >div:first-child {
         background-color: #FF3333;
         text-align: center;
         padding: 16px 0;
@@ -275,7 +275,7 @@ ion-header {
         width: 71%;
         margin: auto;
         margin-top: 30px;
-        > div:first-child {
+        >div:first-child {
             margin-top: 30px;
             width: 50%;
             float: left;
@@ -299,6 +299,34 @@ ion-header {
                     font-weight: 700;
                     line-height: 24px;
                     color: #6509B3;
+                }
+            }
+            +img {
+                width: 46%;
+                float: left;
+                clear: right;
+            }
+        }
+        @media (max-width: 500px) {
+            width: 85%;
+            >div:first-child {
+                width: 100%;
+                float: none;
+                text-align: center;
+                p {
+                    font-size: clamp(34px, 3.7vw, 80px);
+                    line-height: clamp(34px, 3.7vw, 80px);
+                }
+                div {
+                    width: 100%;
+                }
+                +img {
+                    width: 85%;
+                    float: none;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 30px;
                 }
             }
         }
@@ -369,8 +397,9 @@ ion-header {
         }
     }
 }
-@media (max-width: 800px) {
-    .offerTitle div p {
-        text-align: center !important;
-    }
-}
+
+// @media (max-width: 800px) {
+//     .offerTitle div p {
+//         text-align: center !important;
+//     }
+// }
