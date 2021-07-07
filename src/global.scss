@@ -209,6 +209,23 @@ div.titulo {
         font-weight: 700;
         line-height: 24px;
     }
+    @media (max-width: 500px) {
+        margin: 32px 0;
+        padding: 3.9vw 7.7vw;
+        h1 {
+            font-size: 5.7vw;
+            line-height: 5.7vw;
+        }
+        h2 {
+            font-size: 5.7vw;
+            line-height: 5.7vw;
+        }
+        p {
+            font-size: 3.9vw;
+            line-height: 3.9vw;
+            font-weight: 400;
+        }
+    }
 }
 
 .degradeCommonCont {
@@ -232,6 +249,22 @@ div.titulo {
             font-size: calc(8px + 1.5vw);
             font-weight: 700;
             line-height: 40px;
+        }
+    }
+    @media (max-width: 500px) {
+        padding: 7.7vw;
+        h1 {
+            font-size: 5.8vw;
+            line-height: 7vw;
+            margin-bottom: 7.7vw;
+        }
+        p {
+            font-size: 3.9vw;
+            line-height: 5.8vw;
+            strong {
+                font-size: 3.9vw;
+                line-height: 5.8vw;
+            }
         }
     }
 }
@@ -269,9 +302,9 @@ ion-header {
         padding: max(1.2%, 8px) 0;
         p {
             color: white;
-            font-size: clamp(14px, 1.5vw ,100px);
+            font-size: clamp(14px, 1.5vw, 100px);
             font-weight: 700;
-            line-height: clamp(16px, 1.7vw ,100px);
+            line-height: clamp(16px, 1.7vw, 100px);
         }
     }
     .offerTitle {
@@ -317,8 +350,10 @@ ion-header {
                 float: none;
                 text-align: center;
                 p {
-                    font-size: max(24px, 9vw) /*clamp(34px, 3.7vw, 80px)*/;
-                    line-height: max(24px, 9vw) /*clamp(34px, 3.7vw, 80px)*/;
+                    font-size: max(24px, 9vw)/*clamp(34px, 3.7vw, 80px)*/
+                    ;
+                    line-height: max(24px, 9vw)/*clamp(34px, 3.7vw, 80px)*/
+                    ;
                 }
                 div {
                     width: 100%;
@@ -343,7 +378,7 @@ ion-header {
             align-items: flex-end;
             justify-content: center;
             flex-flow: wrap;
-            li:nth-child(5){
+            li:nth-child(5) {
                 margin-right: 20px;
                 margin-top: 60px;
             }
@@ -365,8 +400,8 @@ ion-header {
         }
         @media (max-width: 500px) {
             width: 80%;
-            ul{
-                li:nth-child(5){
+            ul {
+                li:nth-child(5) {
                     margin: 0;
                     margin-top: 15px;
                 }
@@ -422,7 +457,7 @@ ion-header {
                 line-height: max(11.5vw, 36px);
                 strong {
                     font-size: max(12vw, 38px);
-                    line-height:  max(13vw, 35px);
+                    line-height: max(13vw, 35px);
                 }
             }
         }
