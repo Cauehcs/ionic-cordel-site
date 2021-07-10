@@ -94,12 +94,6 @@ p {
     // font-family: ;
 }
 
-.logo {
-    height: 59px;
-    margin-top: 10px;
-    float: left;
-}
-
 .BannersSlider {
     ion-slide {
         align-items: center;
@@ -244,12 +238,8 @@ div.titulo {
     clear: left;
     background: linear-gradient(82.74deg, #FF9E01 14.18%, #6509B3 107.05%);
     width: 100%;
-    height: 289px;
     padding: 32px 14.5vw;
     div {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
         height: 224px;
         h1 {
             color: white;
@@ -276,6 +266,24 @@ div.titulo {
                 font-weight: 600;
                 line-height: 24px;
             }
+        }
+    }
+    @media (max-width: 500px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        div {
+            p {
+                margin-top: 13px;
+            }
+        }
+        div:first-child {
+            margin-bottom: 32px;
+        }
+        div:nth-child(3) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
         }
     }
 }
@@ -366,19 +374,74 @@ div.titulo {
     }
 }
 
+.degradeSmallCont {
+    width: 100%;
+    background: linear-gradient(84.49deg, #FF9E01 2.66%, #6509B3 93.48%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    // padding: clamp(40px, 4.6%, 100px) 0 clamp(40px, 4.6%, 100px) 14.5%;
+    padding: max(40px, 4.6%) 0 max(40px, 4.6%) 14.5%;
+    padding-left: 14.5%;
+    p {
+        font-size: max(22px, 3.7vw);
+        font-weight: 700;
+        line-height: max(24px, 3.7vw);
+        color: #FFFFFF;
+    }
+    @media (max-width: 500px) {
+        padding: max(25px, 2%) 0;
+        padding-left: max(32px, 2.3%);
+        p {
+            font-size: max(18px, 6.5vw);
+            line-height: max(19px, 6.6vw);
+        }
+    }
+}
+
 ion-slides {
     --bullet-background: #FFFFFF !important;
     --bullet-background-active: #FF9E01 !important;
 }
 
 ion-header {
-    width: calc(100vw - 16px);
+    width: 100%;
     transition: background-color 0.5s ease 0s, box-shadow 0.5s ease 0s !important;
     ion-toolbar {
         --background: transparent;
         height: 80px;
         padding: 0 14.5%;
         width: 100%;
+    }
+    button {
+        float: left;
+        width: 34px;
+        height: 34px;
+        background-image: url('assets/icon/hamburguerButton.png');
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-size: contain;
+        margin-top: 23px;
+        @media (min-width: 500px) {
+            width: 0;
+            opacity: 0;
+        }
+    }
+    @media (max-width: 500px) {
+        ion-toolbar {
+            padding: 0 7%;
+        }
+    }
+}
+
+.logo {
+    height: 59px;
+    width: 130px;
+    margin-top: 10px;
+    float: left;
+    display: block;
+    @media (max-width: 500px) {
+        float: none;
+        margin: auto;
+        margin-top: 10px;
     }
 }
 

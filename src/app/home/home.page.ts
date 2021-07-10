@@ -12,6 +12,17 @@ export class HomePage implements OnInit{
   SliderOptions = {
     initialSlide: 1,
     slidesPerView: 3,
+    spaceBetween: 0,
+    speed: 800,
+    loop: true,
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: false,
+      },
+  };
+  DepoimentosSliderOptions = {
+    initialSlide: 1,
+    slidesPerView: 3,
     spaceBetween: '3%',
     speed: 800,
     loop: true,
