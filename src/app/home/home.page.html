@@ -1,6 +1,6 @@
-<ion-header class="ion-no-border {{currentHeaderClass}}" [translucent]="true" style="position: absolute">
+<ion-header id="SiteHeader" class="ion-no-border {{currentHeaderClass}}" [translucent]="true" style="position: absolute">
     <ion-toolbar>
-        <button></button>
+        <button (click)="openHeader()"></button>
         <img src="../../assets/logo.png" class="logo">
         <ul style="float: right;">
             <li><a href="#">Início</a></li>
@@ -12,6 +12,15 @@
             <li><a href="auth" class="roundedLink" style="margin-left: 16px;">Área do aluno</a></li>
         </ul>
     </ion-toolbar>
+    <div id="openedHeader">
+        <p>Início
+            <br>A Cordel
+            <br>Soluções
+            <br>Depoimentos
+            <br>Se Liga! #Professor Atualizado
+            <br>O Informado! #Professor Midiático
+            <br>Level Up! #Professor Gamificado</p>
+    </div>
 </ion-header>
 
 <ion-content id="appContent" (ionScrollStart)="changeHeader($event)" (ionScrollEnd)="normalizeHeader($event)" [scrollEvents]="true" [fullscreen]="true">

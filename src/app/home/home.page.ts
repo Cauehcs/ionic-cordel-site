@@ -56,6 +56,7 @@ export class HomePage implements OnInit{
                               "../../assets/Aparicoes/fotone10.jpg",
                               "../../assets/Aparicoes/Fotofolhape.jpg"];
   currentHeaderClass = 'headerTop';
+  headerIsOpened = false;
 
   ngOnInit() {
     this.currentAppearence = 0;
@@ -92,5 +93,13 @@ export class HomePage implements OnInit{
       this.currentAppearence += (this.currentAppearence == 3) ? -3 : 1;
       document.getElementById('appearenceBtn' + this.currentAppearence.toString()).classList.add('checked');
     }, 10000);
+  }
+
+  openHeader(){
+    if(this.headerIsOpened)
+      document.getElementById('SiteHeader').classList.remove('headerOpened');
+    else
+      document.getElementById('SiteHeader').classList.add('headerOpened');
+    this.headerIsOpened = !this.headerIsOpened;
   }
 }
