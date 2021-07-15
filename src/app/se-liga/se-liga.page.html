@@ -1,0 +1,184 @@
+<ion-header id="SiteHeader" class="ion-no-border {{currentHeaderClass}}" [translucent]="true" style="position: absolute">
+    <ion-toolbar>
+        <button (click)="openHeader()"></button>
+        <img src="../../assets/logo.png" class="logo">
+        <ul style="float: right;">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">A Cordel</a></li>
+            <li><a href="#">Soluções</a></li>
+            <li>
+                <div style="width: 1px; height: 40px; background-color: #FFFFFF; margin: 0 1.5vw;"></div>
+            </li>
+            <li><a href="auth" class="roundedLink" style="margin-left: 16px;">Área do aluno</a></li>
+        </ul>
+    </ion-toolbar>
+    <div id="openedHeader">
+        <p>Início
+            <br>A Cordel
+            <br>Soluções
+            <br>Depoimentos
+            <br>Se Liga! #Professor Atualizado
+            <br>O Informado! #Professor Midiático
+            <br>Level Up! #Professor Gamificado</p>
+    </div>
+</ion-header>
+
+<ion-content id="appContent" (ionScrollStart)="changeHeader($event)" (ionScrollEnd)="normalizeHeader($event)" [scrollEvents]="true" [fullscreen]="true">
+    <div class="firstCont">
+    </div>
+    <div class="commonCont">
+        <h1>“Não há alunos com dificuldades de aprendizagem; há professores com dificuldades de ensinagem”</h1>
+        <p>- José Pacheco</p>
+    </div>
+    <div class="degradeCommonCont">
+        <h1>Para quem se destina o<br>Se Liga! #Professor Atualizado?</h1>
+        <p><strong>O Se Liga! Professor Atualizado</strong> é destinado para educadores que já possuem - ou não - experiência em ferramentas digitais para a sala de aula, metodologias e conceitos importantes para a geração conectada. Ele vai ajudar você
+            a potencializar o processo e objetivos de aprendizagem baseada em metodologias e casos reais.</p><br><br>
+        <p>Assim, pode te ajudar a se atualizar e estar por dentro das tendências da sala de aula no novo normal. Pode ajudar também você educador que quer ter um diferencial em sua carreira profissional, deixando-o mais equipado.</p>
+    </div>
+    <div class="commonCont">
+        <h2>Como estruturamos o<br>conteúdo da trilha para que<br>você se torne um<br><span>Professor Atualizado:</span></h2>
+    </div>
+    <div class="cursoCont">
+        <div>
+            <div class="cursoCards">
+                <ion-card>
+                    <div></div>
+                    <p>Introdução</p>
+                    <span>O que veremos na trilha?</span>
+                </ion-card>
+                <ion-card>
+                    <div></div>
+                    <p>Módulo 1</p>
+                    <span>Quebrando barreiras de mentalidade antiga</span>
+                </ion-card>
+                <ion-card>
+                    <div></div>
+                    <p>Módulo 2</p>
+                    <span>Aprendizagem Efetiva</span>
+                </ion-card>
+                <ion-card style="clear: left;">
+                    <div></div>
+                    <p>Módulo 3</p>
+                    <span>Design Thiking na educação?<br>Como assim?</span>
+                </ion-card>
+                <ion-card>
+                    <div></div>
+                    <p>Módulo 4</p>
+                    <span>Gerenciando e planejando as aulas!</span>
+                </ion-card>
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+        <div class="buyCourse">
+            <img src="../../assets/Panels/SeLigaCoursePagePanel.png">
+            <div>
+                <h2>R$59,90</h2>
+                <h4>ou até 6<strong>x de R$ 9,98</strong> sem juros <span>ver parcelamento</span></h4>
+                <button>Comprar</button>
+                <h3>Detalhes do curso:</h3>
+                <div style="margin-top: 15px;">
+                    <img src="../../assets/icon/clockIcon.png">
+                    <p>6 horas de trilha</p>
+                </div>
+                <div>
+                    <img src="../../assets/icon/fileIcon.png">
+                    <p>3 Materiais de apoio</p>
+                </div>
+                <div>
+                    <img src="../../assets/icon/multiplatIcon.png">
+                    <p>Acesso multiplataforma</p>
+                </div>
+            </div>
+            <div style="clear: left;"></div>
+        </div>
+    </div>
+    <div class="ofertaCont" style="margin-bottom: 110px; margin-top: 0;">
+        <div>
+            <p>OFERTA POR TEMPO LIMITADO!</p>
+            <p style="margin-top: 0.6%;">{{daysLeftText}}</p>
+        </div>
+        <div class="offerTitle">
+            <div>
+                <p>Guia Professor<br>do ̶F̶u̶t̶u̶r̶o̶ Presente</p>
+            </div>
+            <img src="../../assets/MockupCursos.png">
+            <div style="clear: left"></div>
+        </div>
+        <div class="ofertaElements">
+            <ul>
+                <li>
+                    <img src="../../assets/icon/ico2.png">
+                    <div>
+                        <p>Pagamentos seguros</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../../assets/icon/ico1.png">
+                    <div>
+                        <p>Certificado de conclusão digital</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../../assets/icon/ico3.png">
+                    <div>
+                        <p>Suporte da Cordel For Education</p>
+                    </div>
+                </li>
+                <hr>
+                <li>
+                    <img src="../../assets/icon/ico4.png">
+                    <div>
+                        <p>Acesso de todos os dispositivos</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../../assets/icon/ico5.png">
+                    <div>
+                        <p>Demonstração de cases reais</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="ofertaDetails">
+            <span>Os TRÊS cursos separados saem por: R$599,99</span>
+            <h1>Esta oferta lhe garante todas as três trilhas por apenas: R$<strong>143,64</strong></h1>
+            <p>ou em 12x de R$11,97</p>
+            <button>Comprar agora</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <h1>Sobre a Cordel</h1>
+            <p>Depoimentos</p>
+            <p>Aparições</p>
+            <p>Blog</p>
+            <p>Política de Privacidade </p>
+            <p>Termos de Uso</p>
+        </div>
+        <div>
+            <h1>Serviços</h1>
+            <p>Nossos Cursos</p>
+            <p>Se Liga! #ProfessorAtualizado</p>
+            <p>Informado! #ProfessorMidiático</p>
+            <p>LevelUp! #ProfessorGamificado</p>
+        </div>
+        <div>
+            <h1>Contato:</h1>
+            <span>
+              <img src="../../assets/icon/Email.png" style="margin-right: 8px;">
+              <h3 style="color: white">contato@somoscordel.com.br</h3>
+          </span>
+            <span>
+              <img src="../../assets/icon/Numero.png" style="margin: 0 12px 0 3px;">
+              <h3 style="color: white">+55 81 9 4002-8922</h3>
+          </span>
+            <span>
+              <img src="../../assets/icon/Instagram.png" style="width: 24.78px; height: 24.78px;">
+              <img src="../../assets/icon/Whatsapp.png" style="margin-left: 38px; width: 24.78px; height: 24.78px;">
+              <img src="../../assets/icon/Facebook.png" style="margin-left: 38px; width: 24.78px; height: 24.78px;">
+          </span>
+            <img src="../../assets/logo.png" style="width: 90px; margin-top: 40px">
+        </div>
+    </div>
+</ion-content>

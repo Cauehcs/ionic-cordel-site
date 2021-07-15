@@ -26,6 +26,18 @@ const routes: Routes = [
     path: 'venda',
     loadChildren: () => import('./venda/venda.module').then( m => m.VendaPageModule)
   },
+  {
+    path: 'se-liga',
+    loadChildren: () => import('./se-liga/se-liga.module').then( m => m.SeLigaPageModule)
+  },
+  {
+    path: 'informado',
+    loadChildren: () => import('./informado/informado.module').then( m => m.InformadoPageModule)
+  },
+  {
+    path: 'level-up',
+    loadChildren: () => import('./level-up/level-up.module').then( m => m.LevelUpPageModule)
+  },
 
 ];
 

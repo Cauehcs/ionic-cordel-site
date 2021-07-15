@@ -1,0 +1,133 @@
+.firstCont {
+    @media (max-width: 500px) {
+        * {
+            opacity: 0;
+        }
+    }
+    background-image: url("../../assets/Backgrounds/LevelUpBigBG.png");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 51.5vw;
+    position: relative;
+    padding: 140px 14.5% 0 14.5%;
+}
+
+.cursoCont {
+    margin-bottom: 0;
+    >:first-child {
+        padding: calc(8vw - 40px) 14.5% 32px 14.5%;
+    }
+    .cursoCards {
+        width: 100%;
+        float: none;
+        div {
+            float: left;
+            height: 1.2vw;
+            width: .4vw;
+            background-color: #FF9E01;
+        }
+        p {
+            margin-left: calc(5% - .4vw);
+            float: left;
+            color: #6509B3;
+            font-size: 1.2vw;
+            font-weight: 700;
+            line-height: 1.2vw;
+        }
+        span {
+            display: block;
+            padding: 0 5%;
+            margin-top: 10%;
+            clear: left;
+            font-size: 1.7vw;
+            font-weight: 700;
+            line-height: 1.7vw;
+        }
+    }
+    .buyCourse {
+        float: none;
+        width: 100vw;
+        height: 32vw;
+        background-color: white;
+        padding: 32px 14.5%;
+        margin-top: calc(8vw - 64px);
+        >img {
+            width: 27vw;
+            border-radius: 10px;
+            float: left;
+            +div {
+                height: 27vw;
+                float: left;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                margin-left: 7.3vw;
+                flex-direction: column;
+                div {
+                    width: 75.75%;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 15px;
+                    // margin-left: 7.3vw;
+                    img {
+                        width: 8%;
+                        float: left;
+                        margin-right: 6%;
+                    }
+                    p {
+                        color: #A8A8A8;
+                        font-size: 1.2vw;
+                        font-weight: 700;
+                        line-height: 1.2vw;
+                    }
+                }
+                div:nth-child(7) img {
+                    width: 11%;
+                    margin-right: 3.3%;
+                }
+            }
+        }
+        >div:nth-child(4) img {
+            width: 11%;
+            margin-right: 3.3%;
+        }
+        h2 {
+            margin-top: 8px;
+            text-align: center;
+            color: #FF9E01;
+            font-size: calc(8px + 1.5vw);
+            font-weight: 700;
+            +h4 {
+                margin: 0;
+                color: #333332;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 24px;
+                strong {
+                    color: #333332;
+                    font-size: 14px;
+                    font-weight: 800;
+                    line-height: 24px;
+                }
+                span {
+                    color: #FF9E01;
+                }
+            }
+        }
+        h3 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.4vw;
+            font-weight: 700;
+            line-height: 1.8vw;
+        }
+        button {
+            margin-top: 1.6vw;
+            color: white;
+            background-color: #FF9E01;
+            border-radius: 40px;
+            width: 12.5vw;
+            height: 3vw;
+        }
+    }
+}
