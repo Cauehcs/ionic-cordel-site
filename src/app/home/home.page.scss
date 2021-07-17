@@ -8,6 +8,7 @@ li div.bloco {
     height: 17vw;
     margin: 0 5vw 0 0;
     background-repeat: no-repeat;
+    background-size: contain;
     padding: 80px 24px 0 24px;
 }
 
@@ -112,14 +113,15 @@ li div.bloco {
                     clear: left;
                     display: block;
                     ion-card-subtitle {
-                        font-size: 14px;
+                        font-size: 1.1vw;
                         font-weight: 600;
                         color: #A8A8A8;
                     }
                 }
                 ion-card-content {
                     padding-right: 30px;
-                    font-size: 16px;
+                    font-size: 1.2vw;
+                    line-height: 1.5vw;
                     font-weight: 700;
                 }
             }
