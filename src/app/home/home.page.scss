@@ -86,12 +86,17 @@ li div.bloco {
                 background-color: transparent;
                 border-radius: 40px;
                 border: 3px solid #6509B3;
-                color: #6509B3;
+                a {
+                    position: relative;
+                    right: 0;
+                    color: #6509B3;
+                    font-size: 16px;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
                 width: 45%;
                 height: 10%;
                 min-height: 35px;
-                font-size: 16px;
-                font-weight: 700;
                 margin: auto;
                 margin-top: 16px;
             }

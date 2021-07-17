@@ -3,7 +3,7 @@
         <button (click)="openHeader()"></button>
         <img src="../../assets/logo.png" class="logo">
         <ul style="float: right;">
-            <li><a href="#">Início</a></li>
+            <li><a href="home">Início</a></li>
             <li><a href="#">A Cordel</a></li>
             <li><a href="#">Soluções</a></li>
             <li>
@@ -65,7 +65,7 @@
         <div></div>
     </div>
     <div class="appearances">
-        <ion-slides #slides pager="false" [options]="SliderOptions" (ionSlidesDidLoad)="slidesDidLoad(slides)">
+        <ion-slides #slides pager="false" [options]="AppearencesSliderOptions" (ionSlidesDidLoad)="slidesDidLoad(slides)">
             <ion-slide *ngFor="let n of appearences; let i = index" class="appearanceCard">
                 <ion-card>
                     <img [src]="appearenceImg[i]" style="float: left;">
@@ -74,7 +74,7 @@
                     </ion-card-header>
                     <ion-card-content>{{appearences[i]}}</ion-card-content>
                 </ion-card>
-                <button>Ler Matéria</button>
+                <button type="button"><a href="{{appearenceLink[i]}}" target="_blank">Ler Matéria</a></button>
             </ion-slide>
         </ion-slides>
     </div>
@@ -84,7 +84,7 @@
     <div style="margin: 8.2vw 0 32px 0;">
         <div class="titulo">
             <p>
-                <Strong>Nossos cursos</Strong>
+                <Strong>Nossas Soluções</Strong>
             </p>
             <div></div>
         </div>
@@ -95,12 +95,12 @@
                 <div class="bannerTexts">
                     <div class="titulo">
                         <p>
-                            <Strong>O que você encontrará no curso:</Strong>
+                            <Strong>O que você encontrará na trilha:</Strong>
                         </p>
                         <div></div>
                     </div>
                     <p>Em “Professor Atualizado”, as barreiras da mentalidade e uma cultura antiga serão desconstruídas para que uma aprendizagem efetiva e ferramentas possibilitem um aprendizado apoiado no ‘learning by doing’.</p>
-                    <button>Saiba mais</button>
+                    <button><a href="se-liga">Saiba mais</a></button>
                 </div>
             </div>
         </ion-slide>
@@ -109,12 +109,12 @@
                 <div class="bannerTexts">
                     <div class="titulo">
                         <p>
-                            <Strong>O que você encontrará no curso:</Strong>
+                            <Strong>O que você encontrará na trilha:</Strong>
                         </p>
                         <div></div>
                     </div>
-                    <p>O curso “Professor Midiático” abordará ferramentas que estão no dia a dia dos estudantes e que os professores podem incrementar em seu planejamento, para tornar o processo de ensino-aprendizagem mais divertido.</p>
-                    <button>Saiba mais</button>
+                    <p>A trilha “Professor Midiático” abordará ferramentas que estão no dia a dia dos estudantes e que os professores podem incrementar em seu planejamento, para tornar o processo de ensino-aprendizagem mais divertido.</p>
+                    <button><a href="informado">Saiba mais</a></button>
                 </div>
             </div>
         </ion-slide>
@@ -123,12 +123,12 @@
                 <div class="bannerTexts">
                     <div class="titulo">
                         <p>
-                            <Strong>O que você encontrará no curso:</Strong>
+                            <Strong>O que você encontrará na trilha:</Strong>
                         </p>
                         <div></div>
                     </div>
                     <p>Em “Level Up! Professor Gamificado” o educador poderá se capacitar e aprender mais sobre gamificação como metodologia ativa para sala de aula.</p>
-                    <button>Saiba mais</button>
+                    <button><a href="level-up">Saiba mais</a></button>
                 </div>
             </div>
         </ion-slide>
@@ -184,8 +184,8 @@
             </ul>
         </div>
         <div class="ofertaDetails">
-            <span>Os TRÊS cursos separados saem por: R$599,99</span>
-            <h1>Esta oferta lhe garante todos os três cursos por apenas: R$<strong>428,99</strong></h1>
+            <span>As TRÊS trilhas separados saem por: R$599,99</span>
+            <h1>Esta oferta lhe garante todos as três trilhas por apenas: R$<strong>428,99</strong></h1>
             <p>ou em 64x de R$37,93</p>
             <button>Comprar agora</button>
         </div>
@@ -322,6 +322,10 @@
                 <img src="../../assets/icon/Facebook.png" style="margin-left: 38px; width: 24.78px; height: 24.78px;">
             </span>
             <img src="../../assets/logo.png" style="width: 90px; margin-top: 40px">
+        </div>
+        <div>
+            <p>Receba atualizações</p>
+            <input placeholder="E-mail">
         </div>
     </div>
 </ion-content>

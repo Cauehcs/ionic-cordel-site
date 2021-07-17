@@ -10,7 +10,7 @@ export class HomePage implements OnInit{
   constructor() {}
 
   SliderOptions = {
-    initialSlide: 1,
+    initialSlide: 0,
     slidesPerView: 3,
     spaceBetween: 0,
     speed: 800,
@@ -20,8 +20,19 @@ export class HomePage implements OnInit{
       disableOnInteraction: false,
       },
   };
+  AppearencesSliderOptions = {
+    initialSlide: 0,
+    slidesPerView: 3,
+    spaceBetween: 0,
+    speed: 800,
+    loop: false,
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: false,
+      },
+  };
   DepoimentosSliderOptions = {
-    initialSlide: 1,
+    initialSlide: 0,
     slidesPerView: 3,
     spaceBetween: '3%',
     speed: 800,
@@ -51,10 +62,14 @@ export class HomePage implements OnInit{
                               "Pionners Post",
                               "NE 10",
                               "Folha PE"];
-  appearenceImg: string[] = ["../../assets/Aparicoes/fotobomdiape.png",
+  appearenceImg: string[] =  ["../../assets/Aparicoes/fotobomdiape.png",
                               "../../assets/Aparicoes/fotopionnerspost.jpg",
                               "../../assets/Aparicoes/fotone10.jpg",
                               "../../assets/Aparicoes/Fotofolhape.jpg"];
+  appearenceLink: string[] = ["https://www.folhape.com.br/colunistas/tecnologia-e-games/pernambucano-de-17-anos-cria-propria-startup-e-ganha-reconhecimento-internacional/20594/", 
+                              "https://www.pioneerspost.com/news-views/20200313/play-the-planet-the-favela-youth-redesigning-gaming-brazil-s-north-east", 
+                              "https://globoplay.globo.com/v/8885279/", 
+                              "https://jc.ne10.uol.com.br/pernambuco/2020/09/11978112-aos-17-anos--aluno-de-escola-publica-do-recife-se-torna-ceo-de-startup-que-nasceu-na-sala-de-aula.html"];
   currentHeaderClass = 'headerTop';
   headerIsOpened = false;
 
