@@ -667,16 +667,18 @@ ion-header {
         p {
             font-size: max(20px, 2vw);
             font-weight: 700;
+            margin-bottom: 60px;
         }
-        button {
-            margin-top: 40px;
-            width: max(31.5vw, 220px);
-            height: max(5.3vw, 40px);
+        a {
+            // width: max(31.5vw, 220px);
+            // height: max(5.3vw, 40px);
+            padding: max(1.4vw, 12px) max(6vw, 40px);
             color: white;
-            font-size: max(16px, 2.5vw);
+            font-size: max(2.5vw, 16px);
             font-weight: 700;
             background-color: #FF9E01;
             border-radius: 50px;
+            text-decoration: none;
         }
         @media (max-width: 500px) {
             width: 85%;
@@ -773,7 +775,7 @@ ion-header {
                 border-radius: 0 0 10px 10px;
             }
             ion-card-content {
-                padding: 1.2vw 2.5vw;
+                padding: 1.2vw 2.5vw 4.7vw 2.5vw;
                 div {
                     display: flex;
                     align-items: center;
@@ -795,13 +797,6 @@ ion-header {
                     width: 11%;
                     margin-right: 3.3%;
                 }
-                h2 {
-                    margin-top: 8px;
-                    text-align: center;
-                    color: #FF9E01;
-                    font-size: calc(8px + 1.5vw);
-                    font-weight: 700;
-                }
                 h3 {
                     text-align: center;
                     margin-top: 10.5%;
@@ -809,15 +804,21 @@ ion-header {
                     font-weight: 700;
                     line-height: 1.8vw;
                 }
-                button {
-                    margin-left: 2.2vw;
-                    margin-top: 1.5vw;
-                    margin-bottom: 3.5vw;
+                h2 {
+                    margin-top: 8px;
+                    text-align: center;
+                    color: #FF9E01;
+                    font-size: calc(8px + 1.5vw);
+                    font-weight: 700;
+                    margin-bottom: 2.5vw;
+                }
+                a {
+                    margin-left: 2.5vw;
                     color: white;
                     background-color: #FF9E01;
                     border-radius: 40px;
-                    width: 12.5vw;
-                    height: 3vw;
+                    padding: 1vw 2.1vw;
+                    text-decoration: none;
                 }
             }
             h1 {
@@ -858,18 +859,20 @@ ion-header {
                     h2 {
                         margin-top: 14px;
                         font-size: 6.7vw;
+                        margin-bottom: 5vw;
                     }
                     h3 {
                         font-size: 4.8vw;
                         line-height: 6vw;
                         font-weight: 700;
                     }
-                    button {
-                        width: 41vw;
-                        height: 9.7vw;
-                        display: block;
-                        margin: auto;
-                        margin-top: 14px;
+                    a {
+                        margin-left: 10.4vw;
+                        color: white;
+                        background-color: #FF9E01;
+                        border-radius: 40px;
+                        padding: 2vw 6.1vw;
+                        text-decoration: none;
                     }
                 }
             }

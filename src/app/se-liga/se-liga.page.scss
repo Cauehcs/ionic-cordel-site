@@ -146,13 +146,13 @@
             font-weight: 700;
             line-height: 1.8vw;
         }
-        button {
+        a {
             margin-top: 1.6vw;
             color: white;
             background-color: #FF9E01;
             border-radius: 40px;
-            width: 12.5vw;
-            height: 3vw;
+            padding: 1vw 2.1vw;
+            text-decoration: none;
         }
         @media (max-width: 500px) {
             opacity: 0;
