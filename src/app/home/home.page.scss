@@ -8,6 +8,7 @@ li div.bloco {
     height: 17vw;
     margin: 0 5vw 0 0;
     background-repeat: no-repeat;
+    background-size: contain;
     padding: 80px 24px 0 24px;
 }
 
@@ -112,14 +113,15 @@ li div.bloco {
                     clear: left;
                     display: block;
                     ion-card-subtitle {
-                        font-size: 14px;
+                        font-size: 1.1vw;
                         font-weight: 600;
                         color: #A8A8A8;
                     }
                 }
                 ion-card-content {
                     padding-right: 30px;
-                    font-size: 16px;
+                    font-size: 1.2vw;
+                    line-height: 1.5vw;
                     font-weight: 700;
                 }
             }
@@ -154,6 +156,7 @@ li div.bloco {
         min-height: 400px;
         div {
             background-repeat: no-repeat;
+            background-size: contain;
             display: block;
             min-width: 290px;
             min-height: 475px;
@@ -164,20 +167,21 @@ li div.bloco {
             span {
                 text-align: center;
                 h1 {
-                    font-size: 18px;
+                    font-size: max(18px, 1.3vw);
                     font-weight: 700;
                     margin-bottom: 5px;
                 }
                 h2 {
                     margin-top: 0;
                     color: #A8A8A8;
-                    font-size: 14px;
+                    font-size: max(14px, 1vw);
                     font-weight: 600;
                 }
             }
             p {
                 margin-top: 20px;
-                font-size: 12px;
+                font-size: max(12px, 0.9vw);
+                line-height: max(16px, 1.2vw);
                 font-weight: 400;
             }
         }
