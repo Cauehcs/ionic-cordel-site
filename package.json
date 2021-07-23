@@ -20,8 +20,11 @@
     "@angular/platform-browser-dynamic": "~11.2.0",
     "@angular/router": "~11.2.0",
     "@ionic/angular": "^5.5.2",
+    "@mailchimp/mailchimp_marketing": "^3.0.55",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
+    "ua-parser-js": "^0.7.28",
+    "xmlhttprequest-ssl": "^2.0.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
@@ -33,7 +36,7 @@
     "@ionic/angular-toolkit": "^3.1.1",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
-    "@types/node": "^12.11.1",
+    "@types/node": "^12.20.16",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
