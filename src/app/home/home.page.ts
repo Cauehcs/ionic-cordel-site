@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-const { mailChimp } = require('@mailchimp/mailchimp_marketing');
+import { environment } from 'src/environments/environment';
+import { MailChimp } from 'src/services/MailchimpAPI.js';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +9,12 @@ const { mailChimp } = require('@mailchimp/mailchimp_marketing');
 })
 export class HomePage implements OnInit{
 
-  constructor() {}
-
+  constructor() {
+    this.mpapi.run();
+  }
+  mpapi: MailChimp = new MailChimp();
+  //headers: HTTPHeaders;
+  // mailchimp = require('@mailchimp/mailchimp_marketing');
   SliderOptions = {
     initialSlide: 0,
     slidesPerView: 3,
@@ -74,15 +79,9 @@ export class HomePage implements OnInit{
   currentHeaderClass = 'headerTop';
   headerIsOpened = false;
 
-  mailchimp = require('@mailchimp/mailchimp_marketing');
   ngOnInit() {
     this.currentAppearence = 0;
-    console.log(this.mailchimp);
-    this.mailchimp.setConfig({
-      apiKey: 'cdd615cddcbfa18637c3d4a25f33f183-us6',
-      server: 'us6',
-    });
-    this.run();
+    // this.run();
   }
 
   async changeHeader(event){
@@ -120,9 +119,12 @@ export class HomePage implements OnInit{
     }
     this.headerIsOpened = !this.headerIsOpened;
   }
-  async run() {
-    const response = await this.mailchimp.ping.get().then((ping) => {
-      console.log(ping);
-    });
-  }
+  // async run() {
+  //   console.log(this.mailchimp);
+  //   await this.mailchimp.setConfig(environment.mailChimp);
+  //   const response = await this.mailchimp.ping.get().catch((err) => {
+  //     console.log(err);
+  //   });
+  //   console.log(response);
+  // }
 }

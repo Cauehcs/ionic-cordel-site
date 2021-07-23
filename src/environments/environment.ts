@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  mailChimp: {
+    apiKey: 'cdd615cddcbfa18637c3d4a25f33f183-us6',
+    server: 'us6',
+  }
 };
 
 /*
@@ -14,3 +18,4 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+// import { mailChimp } from '@mailchimp/mailchimp_marketing';

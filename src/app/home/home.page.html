@@ -328,15 +328,3 @@
         </div>
     </div>
 </ion-content>
-<script>
-    const mailchimp = require("@mailchimp/mailchimp_marketing");
-    mailchimp.setConfig({
-        apiKey: "cdd615cddcbfa18637c3d4a25f33f183-us6",
-        server: "us6",
-    });
-    async function run() {
-        const response = await mailchimp.ping.get();
-        console.log(response);
-    }
-    run();
-</script>
