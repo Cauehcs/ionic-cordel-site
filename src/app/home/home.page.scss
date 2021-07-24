@@ -9,7 +9,15 @@ li div.bloco {
     margin: 0 5vw 0 0;
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 80px 24px 0 24px;
+    padding: max(5.85vw, 80px) max(1.75vw, 24px) 0 max(1.75vw, 24px);
+    p:first-child {
+        margin: 0 0 7.6% 0;
+        font-weight: 700;
+        font-size: max(20px, 1.5vw);
+    }
+    p {
+        font-size: max(12px, 0.9vw);
+    }
 }
 
 .firstCont {
@@ -124,6 +132,17 @@ li div.bloco {
                     line-height: 1.5vw;
                     font-weight: 700;
                 }
+                @media (max-width: 500px) {
+                    ion-card-content {
+                        font-size: 3.5vw;
+                        line-height: 4vw;
+                    }
+                    ion-card-header {
+                        ion-card-subtitle {
+                            font-size: 3.5vw;
+                        }
+                    }
+                }
             }
             a {
                 position: absolute;
@@ -162,7 +181,7 @@ li div.bloco {
             min-height: 475px;
             width: 21vw;
             height: 35vw;
-            padding: 80px 24px 0 24px;
+            padding: max(5.85vw, 80px) max(1.75vw, 24px) 0 max(1.75vw, 24px);
             text-align: left;
             span {
                 text-align: center;

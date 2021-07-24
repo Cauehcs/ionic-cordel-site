@@ -242,6 +242,10 @@ div.titulo {
     background: linear-gradient(82.74deg, #FF9E01 14.18%, #6509B3 107.05%);
     width: 100%;
     padding: 32px 12.5vw;
+    a {
+        text-decoration: none;
+        color: white;
+    }
     div {
         height: 224px;
         h1 {
@@ -299,6 +303,7 @@ div.titulo {
         }
         div:first-child {
             margin-bottom: 32px;
+            height: 180px;
         }
         div:nth-child(3) {
             display: flex;
@@ -810,10 +815,10 @@ ion-header {
                     color: #FF9E01;
                     font-size: calc(8px + 1.5vw);
                     font-weight: 700;
-                    margin-bottom: 2.5vw;
+                    margin-bottom: 1.5vw;
                 }
                 a {
-                    margin-left: 2.5vw;
+                    // margin-left: 2.5vw;
                     color: white;
                     background-color: #FF9E01;
                     border-radius: 40px;
@@ -867,7 +872,7 @@ ion-header {
                         font-weight: 700;
                     }
                     a {
-                        margin-left: 10.4vw;
+                        // margin-left: 10.4vw;
                         color: white;
                         background-color: #FF9E01;
                         border-radius: 40px;

@@ -10,10 +10,10 @@ import { MailChimp } from 'src/services/MailchimpAPI.js';
 export class HomePage implements OnInit{
 
   constructor() {
-    this.mpapi.run();
+    // this.mpapi.run();
   }
   mpapi: MailChimp = new MailChimp();
-  //headers: HTTPHeaders;
+  // headers: HTTPHeaders;
   // mailchimp = require('@mailchimp/mailchimp_marketing');
   SliderOptions = {
     initialSlide: 0,
@@ -31,7 +31,7 @@ export class HomePage implements OnInit{
     slidesPerView: 3,
     spaceBetween: 0,
     speed: 800,
-    loop: false,
+    loop: true,
     autoplay: {
       delay: 7000,
       disableOnInteraction: false,
