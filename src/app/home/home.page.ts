@@ -8,7 +8,6 @@ import { MailChimp } from 'src/services/MailchimpAPI.js';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit{
-
   constructor() {
     // this.mpapi.run();
   }

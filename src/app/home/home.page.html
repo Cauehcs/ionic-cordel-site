@@ -1,15 +1,15 @@
 <ion-header id="SiteHeader" class="ion-no-border {{currentHeaderClass}}" [translucent]="true" style="position: absolute">
     <ion-toolbar>
         <button (click)="openHeader()"></button>
-        <img src="../../assets/logo.png" class="logo">
+        <a href="home"><img src="../../assets/logo.png" class="logo"></a>
         <ul style="float: right;">
-            <li><a href="home">Início</a></li>
-            <li><a href="#">A Cordel</a></li>
-            <li><a href="#">Soluções</a></li>
+            <li><a onclick="document.getElementById('appContent').scrollToTop(1000)">Início</a></li>
+            <li><a onclick="document.getElementById('appContent').scrollToPoint(0, document.getElementById('aCordel').offsetTop - 100, 1000)">A Cordel</a></li>
+            <li><a onclick="document.getElementById('appContent').scrollToPoint(0, document.getElementById('soluctions').offsetTop - 100, 1000)">Soluções</a></li>
             <li>
                 <div style="width: 1px; height: 40px; background-color: #FFFFFF; margin: 0 1.5vw;"></div>
             </li>
-            <li><a href="auth" class="roundedLink" style="margin-left: 16px;">Fale Conosco</a></li>
+            <li><a class="roundedLink" style="margin-left: 16px;">Fale Conosco</a></li>
         </ul>
     </ion-toolbar>
     <div id="openedHeader">
@@ -30,7 +30,7 @@
         </p>
         <img src="../../assets/caraEstudando.png" style="position: absolute; right: 14.5vw; top: 140px; width: 35%">
     </div>
-    <div class="secondCont">
+    <div id="aCordel" class="secondCont">
         <div class="titulo">
             <p>
                 <Strong>Sobre a Cordel</Strong>
@@ -81,7 +81,7 @@
     <div class="degradeSmallCont" style="padding-top: 6vw; padding-bottom: 6vw">
         <p>Aprenda a planejar<br>e criar aulas mais<br>dinâmicas e engajadoras!</p>
     </div>
-    <div style="margin: 8.2vw 0 32px 0;">
+    <div id="soluctions" style="margin: 8.2vw 0 32px 0;">
         <div class="titulo">
             <p>
                 <Strong>Nossas Soluções</Strong>
@@ -142,7 +142,7 @@
             <div>
                 <p>Guia Professor<br>do ̶F̶u̶t̶u̶r̶o̶ Presente</p>
                 <div>
-                    <p>Três trilhas inéditos</p>
+                    <p>Três trilhas inéditas</p>
                 </div>
             </div>
             <img src="../../assets/MockupCursos.png">

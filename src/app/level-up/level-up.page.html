@@ -1,15 +1,15 @@
 <ion-header id="SiteHeader" class="ion-no-border {{currentHeaderClass}}" [translucent]="true" style="position: absolute">
     <ion-toolbar>
         <button (click)="openHeader()"></button>
-        <img src="../../assets/logo.png" class="logo">
+        <a href="home"><img src="../../assets/logo.png" class="logo"></a>
         <ul style="float: right;">
-            <li><a href="home">Início</a></li>
-            <li><a href="#">A Cordel</a></li>
-            <li><a href="#">Soluções</a></li>
+            <li><a onclick="document.getElementById('appContent').scrollToTop(1000)">Início</a></li>
+            <li><a href="home">A Cordel</a></li>
+            <li><a href="home">Soluções</a></li>
             <li>
                 <div style="width: 1px; height: 40px; background-color: #FFFFFF; margin: 0 1.5vw;"></div>
             </li>
-            <li><a href="auth" class="roundedLink" style="margin-left: 16px;">Fale Conosco</a></li>
+            <li><a class="roundedLink" style="margin-left: 16px;">Fale Conosco</a></li>
         </ul>
     </ion-toolbar>
     <div id="openedHeader">
